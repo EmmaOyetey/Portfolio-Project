@@ -8,11 +8,6 @@ $color-text-portfolio: #09f328;
 $color-text-footer: #160239;
 $color-button-hover:rgb(7, 1, 26);
 */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
 .navigation {
   display: flex;
   justify-content: center;

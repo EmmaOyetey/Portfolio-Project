@@ -6,16 +6,42 @@
 * {
     margin: 0;
     padding: 0;
-}
+    box-sizing: border-box;
+    background-color: color-background-main;
+    }
 
-body {
-    padding: 20px;
-    background-color: $color-background-main;
-}
-
+/*
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 0px 10px; //to reduce the space between 1st section and button
+    }
+    
+    .what-we-do {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-footer;
+        text-align: center;
+        padding: 10px;
+    }
+    */
+/*
 p {
    font-family: $paragraph-font-family; 
    font-size: auto; 
    padding: 10px;
 }
 
+*/
