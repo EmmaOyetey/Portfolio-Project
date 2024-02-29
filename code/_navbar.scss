@@ -1,12 +1,14 @@
 @use "./variables" as *;
 
 .navigation {
+    width
+    background-color: ;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
 
     &__my-name {
-        font-size: 24px;
         font-weight: 700;
         color: $color-text-headings;
         font-family: cormorant, sans-serif;
@@ -28,14 +30,12 @@
         text-align: center;
     
         &__my-name {
-            font-size: 24px;
             font-weight: 700;
             color: $color-text-headings;
             font-family: cormorant, sans-serif;
         }
 
         &__desktop-links {
-            font-size: 20px;
             font-weight: 400;
             font-family: Inter, sans-seif;
             color: $color-text-headings;

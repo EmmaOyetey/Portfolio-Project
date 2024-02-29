@@ -7,146 +7,146 @@
     <link rel="stylesheet" href="styles.css">
   </head>
 
-  <body>
-    <nav class="navigation">
-      <h1 class ="navigation__my-name">Emma Oyetey</h1>
+  <Nav class="navigation">
+
+        <h1 class ="navigation__my-name">Emma Oyetey</h1>
+        
         <div class="navigation__desktop-links">
-            <a href="#about">About</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+              <a href="#nav-link-about">About</a>
+              <a href="#nav-link-portfolio">Portfolio</a>
+              <a href="#nav-link-contact">Contact</a>
         </div>
-    </nav>
+  </Nav>
+
+  <body>
 
     <section class="intro">
+
       <h2 class ="intro__job-title">Junior Software Developer.</h2>
+
       <p class="intro__blurb">
-        Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. Diam, elementum morbi pellentesque blandit suscipit sit. Neque, et consequat phasellus augue neque mollis tempor.
-      </p>
+        Nunc aliquam faucibus ac in donec commodo id. Dui viverra sit feugiat massa pellentesque arcu at quis. 
+        Diam, elementum morbi pellentesque blandit suscipit sit. 
+        Neque, et consequat phasellus augue neque mollis tempor.</p>
+
     </section>
 
     <section class="about-me">
-      <h3 id="about" .about-me__heading>ABOUT</h3>
-      <img src="" alt="me" class="about-me__myimage" />
-      <p class = "about-me-blurb">
+
+      <h3 id="nav-link-about" class= about-me__heading>ABOUT</h3>
+
+      <img src="" alt="photo-of-Emma" class="about-me__myimage" />
+
+      <p class = "about-me__blurb1">
         Interdum sollicitudin fringilla quisque vivamus. Eget viverra metus, ultrices aliquet. Velit, 
         tincidunt sed sed proin pellentesque dictum pulvinar. 
         Arcu diam massa elementum tempor lectus. 
         Aliquam lacus lacus diam eget quisque purus etiam mi, curabitur. 
         Imperdiet sed felis ipsum, porttitor ipsum faucibus neque cursus. 
-        Quis blandit quisque sed diam at tellus sagittis. 
-        
-      </p>
-      <p>
+        Quis blandit quisque sed diam at tellus sagittis. </p>
+
+      <p class = "about-me__blurb2">
         Urna, vel nibh lectus condimentum. 
         Purus pellentesque scelerisque tristique in vestibulum augue accumsan. 
         Eu morbi porttitor dolor ipsum dui ultrices viverra nisi, leo. 
         Erat porta risus, id enim adipiscing sit amet at. 
         Tortor, posuere pulvinar volutpat magnis felis suspendisse ut. 
         Tincidunt in pulvinar suspendisse lectus enim, tortor mattis ut. 
-        Integer auctor aliquet tincidunt rhoncus at.
-      </p>
+        Integer auctor aliquet tincidunt rhoncus at.</p>
+
     </section>
 
-    <section class="skills">
-      <h4>SKILLS</h4>
-      <p>
+    <section class="my-skills">
+
+      <h4 class="my-skills__heading">SKILLS</h4>
+
+      <p class = skills__info>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem velit,
         sint eveniet tempora ullam maxime ad temporibus repudiandae libero
         voluptatum facilis debitis at officia? Vitae mollitia corrupti
-        blanditiis maxime eos.
-      </p>
-      <img src="" alt="" class="skills__logos" />
+        blanditiis maxime eos.</p>
+
+      <div class = "my-skills__logos">
+        <img src="/images/Skill=BEM.svg" alt="BEM logo" class= "bem-logo" /> 
+        <img src="/images/Skill=CSS3.svg" alt="CSS3 logo" class="css3-logo" /> 
+        <img src="/images/Skill=Git.svg" alt="Git logo" class="git-logo" /> 
+        <img src="/images/Skill=HTML5.svg" alt="HTML5 logo" class= "html5-logo" /> 
+        <img src="/images/Skill=Javajava.png" alt="CSS3 logo" class="java-logo" /> <!--this is a png dp i need to get the svg-->
+        <img src="/images/Skill=JavaScript.svg" alt="javascript logo" class="javascript-logo" /> 
+        <img src="/images/Skill=React.svg" alt="React logo" class= "react-logo" /> 
+        <img src="/images/Skill=SCSS.svg" alt="scss logo" class="scss-logo" /> 
+        <img src="/images/Skill=Spring Boot.svg" alt="Gspringboot logo" class="springboot-logo" /> 
+      </div>
+
     </section>
 
     <section class="portfolio">
+
       <!--to be styled using grid-->
-      <h4 id="portfolio">Portfolio</h4>
+      <h5 id="nav-link-portfolio" class = "portfolio__heading">Portfolio</h5>
 
-      <div class="portfolio__projects">
-        <div class="portfolio__projects">
-          <h5>Project 1</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
+      <div class="portfolio__projects">  
+
+        <div class="portfolio__projects portfolio__projects--featured-project">       
+          <h6 class ="portfolio__project-header">Project 1</h6>
+          <img src="" class = "portfolio__project-image" alt="project image" />
+          <a href="" class="eye" ><img src="/images/eye.svg" alt="eye-icon" /></a>
           <!--need to look into adapting svgs so circle is black not white-->
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
+          <p class="portfolio__project-skills">React SCSS</p>
         </div>
 
-        <div class="portfolio__projects">
-          <h5>Project 2</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+        <div class="portfolio__projects portfolio__projects--featured-project">
+          <h7 class ="portfolio__project-header">Project 2</h7>
+          <img src="" class="portfolio__project-image" alt="project image" />
+          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
+          <p class="portfolio__project__skills">React SCSS</p>
         </div>
 
-        <div class="portfolio__projects">
-          <h5>Project 3</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+        <div class="portfolio__projects portfolio__projects--featured-project">
+          <h8 class ="portfolio__project-header">Project 3</h8>
+          <img src="" class="portfolio__project-image" alt="project image" />
+          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
+          <pclass="portfolio__project__skills">React SCSS</pclass=>
         </div>
 
         <div class="portfolio__projects portfolio__projects--desktop">
-          <h5>Project 4</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+          <h9 class ="portfolio__project-header">Project 4</h9>
+          <img src="" class = "portfolio__project-image" alt="project image" />
+          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon" /></a>
+          <p class="portfolio__project__skills">React SCSS</p>
         </div>
 
         <div class="portfolio__projects portfolio__projects--desktop">
-          <h5>Project 5</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+          <h10 class ="portfolio__project-header">Project 5</h10>
+          <img src="" class = "portfolio__project-image" alt="" />
+          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
+          <p class="portfolio__project__skills">React SCSS</p>
         </div>
 
         <div class="portfolio__projects portfolio__projects--desktop">
-          <h5>Project 6</h5>
-          <img src="" alt="" />
-          <a href="" class="eye"
-            ><img src="/images/eye.svg" alt="eye-icon"
-          /></a>
-          <a href="" class="code"
-            ><img src="/images/code.svg" alt="code-icon"
-          /></a>
-          <p>React SCSS</p>
+          <h11 class ="portfolio__project-header">Project 6</h11>
+          <img src="" class = "portfolio__project-image" alt="" />
+          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
+          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
+          <p class="portfolio__project__skills">React SCSS</p>
         </div>
 
       </div>
     </section>
 
     <section class="get-in-touch">
-      <h3 id="contact">Get in touch</h3>
+
+      <h12 id="nav-link-contact" class = "get-in-touch__heading">Get in touch</h12>
       <a href="mailto:" class="button">Contact</a>
     </section>
 
     <footer class="social-media-links">
-      <a href="http://"
-        ><img
+      <a href="http://"><img
           src="/images/linkedin.svg"
           alt="linkedin"
           class="social-media-links__linkedin"

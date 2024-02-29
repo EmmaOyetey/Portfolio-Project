@@ -1,6 +1,7 @@
 /*color schemes*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
 /*test colors to be changed
 $font-body: "cormorant" , "sans-serif" ;
 $color-text-body: pink;
@@ -9,12 +10,13 @@ $color-text-footer: #160239;
 $color-button-hover:rgb(7, 1, 26);
 */
 .navigation {
+  height: 60px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 .navigation__my-name {
-  font-size: 24px;
   font-weight: 700;
   color: #000000;
   font-family: cormorant, sans-serif;
@@ -32,13 +34,11 @@ $color-button-hover:rgb(7, 1, 26);
     text-align: center;
   }
   .navigation__my-name {
-    font-size: 24px;
     font-weight: 700;
     color: #000000;
     font-family: cormorant, sans-serif;
   }
   .navigation__desktop-links {
-    font-size: 20px;
     font-weight: 400;
     font-family: Inter, sans-seif;
     color: #000000;
@@ -85,18 +85,70 @@ $color-button-hover:rgb(7, 1, 26);
     padding: 10px;
   }
 }
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  /*
+    &__blurb{
+        font-size:16px;
+        font-weight:400;
+        color: $color-text-headings;
+        font-family: Inter, sans-serif;
+    } */
+}
+.about-me__myimage {
+  width: 100vw;
+  height: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+.about-me__heading {
+  font-family: cormorant, sans-serif;
+  padding: 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  background-color: color-background-main;
 }
 
-body {
-  padding: 20px;
-  background-color: #ffffff;
-}
+/*
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px 10px 0px 10px; //to reduce the space between 1st section and button
+    }
 
+    .what-we-do {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: $color-footer;
+        text-align: center;
+        padding: 10px;
+    }
+    */
+/*
 p {
-  font-family: inter, sans-serif;
-  font-size: auto;
-  padding: 10px;
-}/*# sourceMappingURL=styles.css.map */
+   font-family: $paragraph-font-family; 
+   font-size: auto; 
+   padding: 10px;
+}
+
+*//*# sourceMappingURL=styles.css.map */

@@ -1,7 +1,7 @@
 @use "./variables" as *;
-@use "./components";
 @use "./navbar";
 @use "./header";
+@use "./aboutme";
 
 * {
     margin: 0;
@@ -9,6 +9,8 @@
     box-sizing: border-box;
     background-color: color-background-main;
     }
+
+    
 
 /*
     .intro {
