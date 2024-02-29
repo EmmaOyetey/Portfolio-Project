@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+nav {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+    h1 {
+        font-size: 24px;
+        font-weight: 700;
+        color: $color-text-headings;
+        font-family: cormorant, sans-serif;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .nav__desktop-links {
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 768px) { 
+
+
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+    
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            color: $color-text-headings;
+            font-family: cormorant, sans-serif;
+        }
+
+        .nav__desktop-links {
+            font-size: 20px;
+            font-weight: 400;
+            font-family: "Inter", sans-seif;
+        }
+           
+}
+}

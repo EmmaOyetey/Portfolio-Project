@@ -1,5 +1,53 @@
 /*color schemes*/
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/*test colors to be changed
+$font-body: "cormorant" , "sans-serif" ;
+$color-text-body: pink;
+$color-text-portfolio: #09f328;
+$color-text-footer: #160239;
+$color-button-hover:rgb(7, 1, 26);
+*/
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+  font-family: cormorant, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+nav .nav__desktop-links {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000000;
+    font-family: cormorant, sans-serif;
+  }
+  nav .nav__desktop-links {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Inter", sans-seif;
+  }
+}
 * {
   margin: 0;
   padding: 0;
