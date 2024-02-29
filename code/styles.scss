@@ -1,4 +1,4 @@
-@use "./variables";
+@use "./variables" as *;
 @use "./components";
 @use "./navbar";
 @use "./header";
@@ -8,4 +8,14 @@
     padding: 0;
 }
 
+body {
+    padding: 20px;
+    background-color: $color-background-main;
+}
+
+p {
+   font-family: $paragraph-font-family; 
+   font-size: auto; 
+   padding: 10px;
+}
 

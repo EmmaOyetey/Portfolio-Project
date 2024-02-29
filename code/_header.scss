@@ -6,7 +6,7 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    padding: 10px;
+
 
     &__job-title {
         font-size: 80px;
@@ -19,16 +19,32 @@
         font-size:16px;
         font-weight:400;
         color: $color-text-headings;
-        font-family: "Inter", ;
+        font-family: Inter, sans-serif;
     }
 }
 
 @media screen and (min-width: 768px) {
 
-.intro {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
-}
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+
+        &__job-title {
+            font-size: 128px;
+            font-weight: 400;
+            color: $color-text-headings;
+            font-family: cormorant, sans-serif;
+            padding: 10px;
+        }
+        
+        &__blurb{
+            font-size:20px;
+            font-weight:400;
+            color: $color-text-headings;
+            font-family: "Inter", sans-serif;
+            padding: 10px;
+        }
+    }
 }
