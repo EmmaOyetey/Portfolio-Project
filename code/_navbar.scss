@@ -1,17 +1,16 @@
 @use "./variables" as *;
 
 .navigation {
-    width
-    background-color: ;
+    height: 60px;
+    background-color:$color-test-blue-background ; /*CHANGE -testing*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
     &__my-name {
-        font-weight: 700;
-        color: $color-text-headings;
-        font-family: cormorant, sans-serif;
+        color: $color-test-orange-text; /*CHANGE -testing*/
+        font-family:$test-font-family-2 ; /*CHANGE -testing*/
         margin-top: 10px;
         margin-bottom: 20px;
     }
@@ -21,7 +20,7 @@
     }
 }
 
-
+/*
 @media screen and (min-width: 768px) { 
 
     .navigation {
@@ -44,3 +43,5 @@
     }
 
 }
+
+*/

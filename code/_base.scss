@@ -1,0 +1,9 @@
+@use "./variables" as*;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $test-font-family; /*change this later */
+    color: $color-text-main ;
+}
