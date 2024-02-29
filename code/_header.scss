@@ -1,0 +1,34 @@
+@use "./variables" as *;
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding: 10px;
+
+    &__job-title {
+        font-size: 80px;
+        font-weight: 400;
+        color: $color-text-headings;
+        font-family: cormorant, sans-serif;
+    }
+    
+    &__blurb{
+        font-size:16px;
+        font-weight:400;
+        color: $color-text-headings;
+        font-family: "Inter", ;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+}

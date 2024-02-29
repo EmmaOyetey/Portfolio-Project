@@ -13,12 +13,12 @@ body {
   flex-direction: column;
 }
 
-nav {
+.navigation {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-nav h1 {
+.navigation__my-name {
   font-size: 24px;
   font-weight: 700;
   color: #000000;
@@ -26,26 +26,55 @@ nav h1 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
-nav .nav__desktop-links {
+.navigation__desktop-links {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  nav {
+  .navigation {
     display: flex;
     justify-content: space-between;
     text-align: center;
   }
-  nav h1 {
+  .navigation__my-name {
     font-size: 24px;
     font-weight: 700;
     color: #000000;
     font-family: cormorant, sans-serif;
   }
-  nav .nav__desktop-links {
+  .navigation__desktop-links {
     font-size: 20px;
     font-weight: 400;
-    font-family: "Inter", sans-seif;
+    font-family: Inter, sans-seif;
+    color: #000000;
+  }
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 10px;
+}
+.intro__job-title {
+  font-size: 80px;
+  font-weight: 400;
+  color: #000000;
+  font-family: cormorant, sans-serif;
+}
+.intro__blurb {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  font-family: "Inter";
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
   }
 }
 * {
