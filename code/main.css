@@ -1,1 +1,59 @@
-/*# sourceMappingURL=main.css.map */
+/*font styling*/
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+/*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
+/* to change  */
+/* to change
+
+/*color schemes*/
+* {
+  margin: 0;
+  padding: 15px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace; /*change this later */
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navigation {
+  height: 60px;
+  font-size: small;
+  background-color: blue; /*CHANGE -testing*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.navigation__my-name {
+  color: orange; /*CHANGE -testing*/
+  font-family: "Verdana", Geneva, Tahoma, sans-serif; /*CHANGE -testing*/
+  padding: 0;
+}
+.navigation__desktop-links {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .navigation {
+    height: 60px;
+    background-color: blue; /*CHANGE -testing*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navigation__my-name {
+    color: orange; /*CHANGE -testing*/
+    font-family: "Verdana", Geneva, Tahoma, sans-serif; /*CHANGE -testing*/
+    max-width: 200px; /*CHANGE -testing*/
+    max-height: auto;
+  }
+  .navigation__desktop-links {
+    display: block;
+    color: rgb(218, 6, 109); /*CHANGE -testing*/
+    text-align: center;
+  }
+}/*# sourceMappingURL=main.css.map */

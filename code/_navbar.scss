@@ -2,17 +2,18 @@
 
 .navigation {
     height: 60px;
+    font-size: small;
     background-color:$color-test-blue-background ; /*CHANGE -testing*/
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
+    align-items: center;
+    
+    
 
     &__my-name {
         color: $color-test-orange-text; /*CHANGE -testing*/
         font-family:$test-font-family-2 ; /*CHANGE -testing*/
-        margin-top: 10px;
-        margin-bottom: 20px;
+        padding: 0;
     }
     
     &__desktop-links {
@@ -20,28 +21,30 @@
     }
 }
 
-/*
+
 @media screen and (min-width: 768px) { 
 
-    .navigation {
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-    
-        &__my-name {
-            font-weight: 700;
-            color: $color-text-headings;
-            font-family: cormorant, sans-serif;
-        }
+.navigation {
+    height: 60px;
+    background-color:$color-test-blue-background ; /*CHANGE -testing*/
+    display: flex;
+    flex-direction: row ; 
+    justify-content: space-between;
+    align-items: center;        
 
-        &__desktop-links {
-            font-weight: 400;
-            font-family: Inter, sans-seif;
-            color: $color-text-headings;
-        }
+    &__my-name {
+        color: $color-test-orange-text; /*CHANGE -testing*/
+        font-family:$test-font-family-2 ; /*CHANGE -testing*/
+        max-width: 200px; /*CHANGE -testing*/
+        max-height: auto;
+    }
+
+    &__desktop-links {
+        display:block;
+        color: $color-test-pink-text ; /*CHANGE -testing*/
+        text-align: center;   
+    }
            
     }
 
 }
-
-*/

@@ -2,8 +2,13 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 15px;
     box-sizing: border-box;
     font-family: $test-font-family; /*change this later */
     color: $color-text-main ;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
 }
