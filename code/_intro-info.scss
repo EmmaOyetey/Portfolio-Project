@@ -10,12 +10,15 @@
 
 
     &__job-title {
-        color: $color-text-headings;
+        color: $color-test-pink-text;
         font-family: cormorant, sans-serif;
+        font-size: xxx-large;
+        margin-bottom: 20px;
+        margin-top: 20px;
     }
     
     &__blurb{
-        color: $color-text-headings;
+        color: $color-test-orange-text;
         font-family: Inter, sans-serif;
     }
 }
@@ -29,6 +32,7 @@
         flex-direction: column;
         justify-content: flex-start;
         text-align: left;
+        
 
         &__job-title {
             font-size: 128px;

@@ -8,7 +8,7 @@
 /*color schemes*/
 * {
   margin: 0;
-  padding: 15px;
+  padding: 10px;
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace; /*change this later */
   color: #000000;
@@ -56,4 +56,53 @@ a {
     color: rgb(218, 6, 109); /*CHANGE -testing*/
     text-align: center;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0;
+}
+.intro__job-title {
+  color: rgb(218, 6, 109);
+  font-family: cormorant, sans-serif;
+  font-size: xxx-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.intro__blurb {
+  color: orange;
+  font-family: Inter, sans-serif;
+}
+
+/*
+
+@media screen and (min-width: 768px) {
+
+    .intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+
+
+        &__job-title {
+            font-size: 128px;
+            font-weight: 400;
+            color: $color-text-headings;
+            font-family: cormorant, sans-serif;
+            padding: 10px;
+        }
+
+        &__blurb{
+            font-size:20px;
+            font-weight:400;
+            color: $color-text-headings;
+            font-family: "Inter", sans-serif;
+            padding: 10px;
+        }
+    }
+}
+
+*//*# sourceMappingURL=main.css.map */

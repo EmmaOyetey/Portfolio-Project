@@ -6,16 +6,23 @@
   justify-content: flex-start;
   text-align: left;
 
-  &__myimage {
-    width: 100vw;
-    height: 30px;
-    object-fit: cover;
-    overflow: hidden;
-  }
-
-  &__heading {
+    &__heading {
     font-family: cormorant, sans-serif;
     padding: 10px;
+
+    &__myimage {
+      max-width: 100%; // Ensures the image does not exceed the width of the container
+      max-height: 100%;
+
+    &__about-me__blurb1 {
+    font-family: cormorant, sans-serif;
+    color: $color-test-green-background; /*test*/
+    }
+
+  &__about-me__blurb2 {
+    font-family: cormorant, sans-serif;
+    color: $color-test-green-background; /*test*/
+  }
   }
   /*
     &__blurb{
@@ -24,4 +31,5 @@
         color: $color-text-headings;
         font-family: Inter, sans-serif;
     } */
+}
 }
