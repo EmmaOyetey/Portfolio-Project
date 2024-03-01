@@ -40,37 +40,26 @@
 
     /* adding media query */
 
-    @media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) { 
+  
+  .about-me {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas:
+                  "heading myimage"
+                  "blurb1 myimage"
+                  "blurb2 myimage";
 
-    .about-me__heading {
-      grid-area: heading;
-    }
-  
-    .about-me__myimage {
-      grid-area: myimage;
-    }
-  
-    .about-me__blurb1 {
-      grid-area: blurb1;
-    }
-
-    .aboutme__blurb2 {
-      grid-area: blurb2;
-    }
-  
-  
-    .about-me {
-      display: grid;
-      grid-gap: 10px;
-      grid-template-columns: 2fr 1fr ;
-      grid-template-rows: repeat(3,1fr);
-      grid-template-areas:
-                 "heading myimage"
-                 "blurb1 myimage"
-                 "blurb1 myimage";
-    }
+    &__heading {grid-area: heading;}         
+    &__myimage {grid-area: myimage;}      
+    &__blurb1  {grid-area: blurb1;}     
+    &__blurb2  {grid-area: blurb2;}      
 
   }
+
+}
 /*
   .about-me__blurb1 .aboutme__blurb2 {
     background-color: #444;

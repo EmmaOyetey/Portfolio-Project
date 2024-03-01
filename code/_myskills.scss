@@ -1,0 +1,60 @@
+@use "./variables" as *;
+
+.my-skills {
+    display: none;
+}
+
+
+
+@media screen and (min-width: 768px) { 
+
+.my-skills{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, [col] 1fr ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    font-size: small;
+    
+      &__heading { 
+        grid-column: col / span 1;
+        grid-row: row 1;
+      }
+
+      &__info {
+        grid-column: col 2 / span 5 ;
+        grid-row: row 1;
+      }
+
+      &__logos {
+        grid-column: col / span 6;
+        grid-row: row 2 ;
+      }
+
+    }  
+}
+
+/*
+    .my-skills__heading {
+      grid-area: heading;
+    }
+  
+    .my-skills__info {
+      grid-area: info;
+    }
+  
+    .my-skills__logos {
+      grid-area: logos;
+    }
+  
+    .my-skills {
+      display: grid;
+      align-content: stretch;
+      grid-gap: 10px;
+      grid-template-columns: repeat(6,1fr) ;
+      grid-template-rows: repeat(2,1fr);
+      grid-template-areas:
+                 "heading info info info info info"
+                 "logos logos logos logos logos logos";
+                
+    }
+*/
