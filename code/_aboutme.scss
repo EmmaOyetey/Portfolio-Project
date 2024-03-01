@@ -9,10 +9,12 @@
     &__heading {
     font-family: cormorant, sans-serif;
     padding: 10px;
-
+    }
+/*
     &__myimage {
-      max-width: 100%; // Ensures the image does not exceed the width of the container
-      max-height: 100%;
+     // Ensures the image does not exceed the width of the container
+      max-height: 60px;
+*/
 
     &__about-me__blurb1 {
     font-family: cormorant, sans-serif;
@@ -31,5 +33,3 @@
         color: $color-text-headings;
         font-family: Inter, sans-serif;
     } */
-}
-}
