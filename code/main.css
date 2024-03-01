@@ -229,4 +229,69 @@ a {
         }         
 
     }
+*/
+/*mobile version*/
+.myPortfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-x: hidden; /*remove?*/
+}
+.myPortfolio__projects--featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.myPortfolio__heading {
+  font-size: smaller;
+}
+.myPortfolio__project-image {
+  max-width: 100%;
+  width: auto;
+  background-color: black;
+}
+.myPortfolio__project-moreInfoNav {
+  height: 60px;
+  background-color: blue; /*CHANGE -testing*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.myPortfolio__project-moreInfoNav--skills {
+  display: none;
+}
+.myPortfolio__project--longlist {
+  display: none;
+}
+
+/*desk top version using grid-template-area*/
+/*
+
+.myPortfolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 1fr) ;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+              " heading heading heading"
+              " featured featured featured"
+              " project project project";
+
+        &__heading {
+            grid-area: heading;
+        } 
+
+        &__projects--featured {
+            grid-area: featured;
+        }    
+
+        &__projects {
+            grid-area: blurb1;
+        }
+
+}
+
 *//*# sourceMappingURL=main.css.map */

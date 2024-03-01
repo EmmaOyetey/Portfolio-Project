@@ -33,10 +33,12 @@
             flex-direction: row ; 
             justify-content: space-between;
             align-items: center; 
-        }
+        
         &--skills {
             display: none;
         }
+    }
+
     
     &__project--longlist {
         display: none;
