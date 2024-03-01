@@ -1,0 +1,75 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.myPortfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-x: hidden;  /*remove?*/
+
+    &__projects--featured {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    }
+
+    &__heading {
+        font-size: smaller;
+    }
+
+    &__project-image {
+        max-width:100%;
+        width: auto;
+        background-color: black;
+    }
+
+    &__project-moreInfoNav {
+            height: 60px;
+            background-color:$color-test-blue-background ; /*CHANGE -testing*/
+            display: flex;
+            flex-direction: row ; 
+            justify-content: space-between;
+            align-items: center; 
+        }
+        &--skills {
+            display: none;
+        }
+    
+    &__project--longlist {
+        display: none;
+    }
+}
+
+
+/*desk top version using grid-template-area*/
+
+/*
+
+.myPortfolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3 1fr) ;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas:
+              " heading heading heading"
+              " featured featured featured"
+              " project project project";
+
+        &__heading {
+            grid-area: heading;
+        } 
+
+        &__projects--featured {
+            grid-area: featured;
+        }    
+
+        &__projects {
+            grid-area: blurb1;
+        }
+    
+}
+
+*/

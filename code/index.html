@@ -60,7 +60,7 @@
 
       <h4 class="my-skills__heading">SKILLS</h4>
 
-      <p class = skills__info>
+      <p class = my-skills__info>
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem velit,
         sint eveniet tempora ullam maxime ad temporibus repudiandae libero
         voluptatum facilis debitis at officia? Vitae mollitia corrupti
@@ -80,60 +80,68 @@
 
     </section>
 
-    <section class="portfolio">
+    <section class="myPortfolio">
 
       <!--to be styled using grid-->
-      <h5 id="nav-link-portfolio" class = "portfolio__heading">Portfolio</h5>
+      <h5 id="nav-link-portfolio" class = "myPortfolio__heading">Portfolio</h5>
 
-      <div class="portfolio__projects">  
+      <div class="myPortfolio__project">  
 
-        <div class="portfolio__projects portfolio__projects--featured-project">       
-          <h6 class ="portfolio__project-header">Project 1</h6>
-          <img src="" class = "portfolio__project-image" alt="project image" />
-          <a href="" class="eye" ><img src="/images/eye.svg" alt="eye-icon" /></a>
-          <!--need to look into adapting svgs so circle is black not white-->
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
-          <p class="portfolio__project-skills">React SCSS</p>
+        <div class="myPortfolio__project MyPortfolio__project--featured">       
+          <img src="" class = "myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav">
+            <h6 class ="myPortfolio__project-header">Project 1</h6>
+            <a href="" class="eye-image" ><img src="/images/eye.svg" alt="eye-icon" /></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon"/></a>
+            <p class="myPortfolio__project myPortfolio__project-moreInfoNav--skills">React SCSS</p>
+          </section> 
         </div>
 
-        <div class="portfolio__projects portfolio__projects--featured-project">
-          <h7 class ="portfolio__project-header">Project 2</h7>
-          <img src="" class="portfolio__project-image" alt="project image" />
-          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
-          <p class="portfolio__project__skills">React SCSS</p>
+        <div class="myPortfolio__project myPortfolio__project--featured">
+          <img src="" class="myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav"></section>
+            <h7 class ="myPortfolio__project-header">Project 2</h7>
+            <a href="" class="eye-image"><img src="/images/eye.svg" alt="eye-icon"/></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon"/></a>
+            <p class="myPortfolio__project myPortfolio__project-moreInfoNav--skills">React SCSS</p>
+          </section>
         </div>
 
-        <div class="portfolio__projects portfolio__projects--featured-project">
-          <h8 class ="portfolio__project-header">Project 3</h8>
-          <img src="" class="portfolio__project-image" alt="project image" />
-          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
-          <pclass="portfolio__project__skills">React SCSS</pclass=>
+        <div class="myPortfolio__project myPortfolio__project--featured">
+          <img src="" class="myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav">
+            <h8 class ="myPortfolio__project-header">Project 3</h8>
+            <a href="" class="eye-image"><img src="/images/eye.svg" alt="eye-icon"/></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon"/></a>
+            <p class="myPortfolio__project myPortfolio__project-moreInfoNav--skills">React SCSS</p>
+          </section>
         </div>
 
-        <div class="portfolio__projects portfolio__projects--desktop">
-          <h9 class ="portfolio__project-header">Project 4</h9>
-          <img src="" class = "portfolio__project-image" alt="project image" />
-          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon" /></a>
-          <p class="portfolio__project__skills">React SCSS</p>
+        <div class="myPortfolio__project myPortfolio__project--longlist">
+          <img src="" class = "myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav"></section>
+            <h9 class ="myPortfolio__project-header">Project 4</h9>
+            <a href="" class="eye-image"><img src="/images/eye.svg" alt="eye-icon"/></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon" /></a>
+            <p class="myPortfolio__project myPortfolio__project-moreInfoNav--skills">React SCSS</p>
         </div>
 
-        <div class="portfolio__projects portfolio__projects--desktop">
-          <h10 class ="portfolio__project-header">Project 5</h10>
-          <img src="" class = "portfolio__project-image" alt="" />
-          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
-          <p class="portfolio__project__skills">React SCSS</p>
+        <div class="myPortfolio__project myPortfolio__project--longlist">
+          <img src="" class = "myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav"></section>
+            <h10 class ="myPortfolio__project-header">Project 5</h10>
+            <a href="" class="eye-image"><img src="/images/eye.svg" alt="eye-icon"/></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon"/></a>
+            <p class="myPortfolio__project myPortfolio__project-moreInfoNav--skills">React SCSS</p>
         </div>
 
-        <div class="portfolio__projects portfolio__projects--desktop">
-          <h11 class ="portfolio__project-header">Project 6</h11>
-          <img src="" class = "portfolio__project-image" alt="" />
-          <a href="" class="eye"><img src="/images/eye.svg" alt="eye-icon"/></a>
-          <a href="" class="code"><img src="/images/code.svg" alt="code-icon"/></a>
-          <p class="portfolio__project__skills">React SCSS</p>
+        <div class="myPortfolio__project myPortfolio__project--longlist">
+          <img src="" class = "myPortfolio__project-image" alt="project image" />
+          <section class="myPortfolio__project-moreInfoNav"></section>
+            <h11 class ="myPortfolio__project-header">Project 6</h11>
+            <a href="" class="eye-image"><img src="/images/eye.svg" alt="eye-icon"/></a>
+            <a href="" class="code-image"><img src="/images/code.svg" alt="code-icon"/></a>
+            <p class="myPortfolio__project--skills">React SCSS</p>
         </div>
 
       </div>

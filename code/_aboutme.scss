@@ -1,5 +1,7 @@
 @use "./variables" as *;
 
+/*mobile version*/
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -8,8 +10,8 @@
   overflow-x: hidden;
 
     &__heading {
-    font-family: cormorant, sans-serif;
-    padding: 10px;
+      font-family: cormorant, sans-serif;
+      padding: 10px;
     }
 
     &__myimage {
@@ -19,26 +21,18 @@
     }
 
     &__blurb1 {
-    font-family: cormorant, sans-serif;
-    color: $color-test-green-background; /*test*/
-    padding-bottom: 0;
-  }
+      font-family: cormorant, sans-serif;
+      color: $color-test-green-background; /*test*/
+      padding-bottom: 0;
+    }
 
     &__blurb2 {
-    font-family: cormorant, sans-serif;
-    color: pink; /*test*/
+      font-family: cormorant, sans-serif;
+      color: pink; /*test*/
     }
   }
 
-  /*
-    &__blurb{
-        font-size:16px;
-        font-weight:400;
-        color: $color-text-headings;
-        font-family: Inter, sans-serif;
-    } */
-
-    /* adding media query */
+/*desk top version using grid-template-area*/
 
 @media screen and (min-width: 768px) { 
   
@@ -52,10 +46,22 @@
                   "blurb1 myimage"
                   "blurb2 myimage";
 
-    &__heading {grid-area: heading;}         
-    &__myimage {grid-area: myimage;}      
-    &__blurb1  {grid-area: blurb1;}     
-    &__blurb2  {grid-area: blurb2;}      
+    &__heading {
+        grid-area: heading;
+      } 
+
+    &__myimage {
+        grid-area: myimage;
+      }    
+
+    &__blurb1  {
+        grid-area: blurb1;
+      } 
+
+    &__blurb2  {
+        grid-area: blurb2;
+      } 
+           
 
   }
 
@@ -70,3 +76,10 @@
     color: $color-test-blue-background;
     font-size: 200%; //*CHANGE */
    
+  /*
+    &__blurb{
+        font-size:16px;
+        font-weight:400;
+        color: $color-text-headings;
+        font-family: Inter, sans-serif;
+    } */

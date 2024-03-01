@@ -35,7 +35,13 @@ a {
 .navigation__desktop-links {
   display: none;
 }
+.navigation__project-image {
+  max-width: 100%;
+  width: auto;
+  background-color: black;
+}
 
+/*desk-top version modified to include nav links*/
 @media screen and (min-width: 768px) {
   .navigation {
     height: 60px;
@@ -106,6 +112,7 @@ a {
 }
 
 */
+/*mobile version*/
 .about-me {
   display: flex;
   flex-direction: column;
@@ -132,14 +139,7 @@ a {
   color: pink; /*test*/
 }
 
-/*
-  &__blurb{
-      font-size:16px;
-      font-weight:400;
-      color: $color-text-headings;
-      font-family: Inter, sans-serif;
-  } */
-/* adding media query */
+/*desk top version using grid-template-area*/
 @media screen and (min-width: 768px) {
   .about-me {
     display: grid;
@@ -170,10 +170,19 @@ a {
   .about-me__heading {
     color: $color-test-blue-background;
     font-size: 200%; //*CHANGE */
+/*
+  &__blurb{
+      font-size:16px;
+      font-weight:400;
+      color: $color-text-headings;
+      font-family: Inter, sans-serif;
+  } */
+/*mobile version*/
 .my-skills {
   display: none;
 }
 
+/*desk top version using grid template and defining grid-template-columns and grid-template-rows */
 @media screen and (min-width: 768px) {
   .my-skills {
     display: grid;
@@ -195,28 +204,29 @@ a {
     grid-row: row 2;
   }
 }
-/*
-    .my-skills__heading {
-      grid-area: heading;
-    }
-
-    .my-skills__info {
-      grid-area: info;
-    }
-
-    .my-skills__logos {
-      grid-area: logos;
-    }
+/* alternative code using template area
 
     .my-skills {
-      display: grid;
-      align-content: stretch;
-      grid-gap: 10px;
-      grid-template-columns: repeat(6,1fr) ;
-      grid-template-rows: repeat(2,1fr);
-      grid-template-areas:
-                 "heading info info info info info"
-                 "logos logos logos logos logos logos";
+    display: grid;
+    align-content: stretch;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+                "heading info info info info info"
+                "logos logos logos logos logos logos";
+
+        &__heading {
+        grid-area: heading;
+        }
+
+        &__info {
+        grid-area: info;
+        }
+
+        &__logos {
+        grid-area: logos;
+        }         
 
     }
 *//*# sourceMappingURL=main.css.map */

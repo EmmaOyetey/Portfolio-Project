@@ -6,9 +6,7 @@
     background-color:$color-test-blue-background ; /*CHANGE -testing*/
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    
+    align-items: center; 
 
     &__my-name {
         color: $color-test-orange-text; /*CHANGE -testing*/
@@ -19,32 +17,39 @@
     &__desktop-links {
         display: none;
     }
+
+    &__project-image {
+        max-width:100%;
+        width: auto;
+        background-color: black;
+    }
 }
 
+/*desk-top version modified to include nav links*/
 
 @media screen and (min-width: 768px) { 
 
-.navigation {
-    height: 60px;
-    background-color:$color-test-blue-background ; /*CHANGE -testing*/
-    display: flex;
-    flex-direction: row ; 
-    justify-content: space-between;
-    align-items: center;        
+    .navigation {
+        height: 60px;
+        background-color:$color-test-blue-background ; /*CHANGE -testing*/
+        display: flex;
+        flex-direction: row ; 
+        justify-content: space-between;
+        align-items: center;        
 
-    &__my-name {
-        color: $color-test-orange-text; /*CHANGE -testing*/
-        font-family:$test-font-family-2 ; /*CHANGE -testing*/
-        max-width: 200px; /*CHANGE -testing*/
-        max-height: auto;
-    }
+            &__my-name {
+                color: $color-test-orange-text; /*CHANGE -testing*/
+                font-family:$test-font-family-2 ; /*CHANGE -testing*/
+                max-width: 200px; /*CHANGE -testing*/
+                max-height: auto;
+            }
 
-    &__desktop-links {
-        display:block;
-        color: $color-test-pink-text ; /*CHANGE -testing*/
-        text-align: center;   
-    }
-           
+            &__desktop-links {
+                display:block;
+                color: $color-test-pink-text ; /*CHANGE -testing*/
+                text-align: center;   
+            }
+            
     }
 
 }
