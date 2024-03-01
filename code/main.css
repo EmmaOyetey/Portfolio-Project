@@ -238,6 +238,9 @@ a {
   text-align: left;
   overflow-x: hidden; /*remove?*/
 }
+.myPortfolio__project--longlist {
+  display: none;
+}
 .myPortfolio__projects--featured {
   display: flex;
   flex-direction: column;
@@ -260,38 +263,43 @@ a {
   justify-content: space-between;
   align-items: center;
 }
-.myPortfolio__project-moreInfoNav--skills {
-  display: none;
-}
-.myPortfolio__project--longlist {
+.myPortfolio__project-skills {
   display: none;
 }
 
 /*desk top version using grid-template-area*/
-/*
-
-.myPortfolio {
+@media screen and (min-width: 768px) {
+  .myPortfolio {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(3 1fr) ;
+    grid-template-columns: repeat(3 1fr);
     grid-template-rows: 1fr 3fr 3fr;
-    grid-template-areas:
-              " heading heading heading"
-              " featured featured featured"
-              " project project project";
-
-        &__heading {
-            grid-area: heading;
-        } 
-
-        &__projects--featured {
-            grid-area: featured;
-        }    
-
-        &__projects {
-            grid-area: blurb1;
-        }
-
-}
-
-*//*# sourceMappingURL=main.css.map */
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: " heading heading heading" " featured featured featured" " skills skills skills" " project project project" " skills skills skills";
+  }
+  .myPortfolio__heading {
+    grid-area: heading;
+  }
+  .myPortfolio__project--longlist {
+    grid-area: project;
+  }
+  .myPortfolio__project--featured {
+    grid-area: featured;
+  }
+  .myPortfolio__project-skills {
+    grid-area: skills;
+  }
+  .myPortfolio__project-image {
+    max-width: 100%;
+    width: auto;
+    background-color: black;
+  }
+  .myPortfolio__project-moreInfoNav {
+    height: 60px;
+    background-color: blue; /*CHANGE -testing*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}/*# sourceMappingURL=main.css.map */
