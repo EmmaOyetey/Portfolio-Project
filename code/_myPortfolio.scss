@@ -17,17 +17,15 @@
         margin-bottom: 10px;
     }
 
-    &__projectN--longlist { /*if time test  embedding --longlist and --featured under &__projects */
-        display: none;
-    }
-
-
     &__projectN{ 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         text-align: left;
         
+        &--longlist {
+            display: none;
+        }
 
         &--imageN {
         max-width:100%;
@@ -40,24 +38,27 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
         }
        
         &--titleN {
         font-size: medium;
-        padding: 0; 
+        padding-top: 15px;
+        padding-left: 0px;
         }
 
-        &--linkN {
+        &--linksN {
             display: flex;
             flex-direction: row;
-            width: 150px;
-            height:40px;
+            justify-content:flex-end;
+            padding-right: 0;
         }
 
        &--skillsN {
             display: none;
         } 
-     }
+    }
 }
 
 /*desk top version using grid-template-area */

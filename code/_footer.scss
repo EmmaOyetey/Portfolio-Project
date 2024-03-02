@@ -1,0 +1,29 @@
+@use "./variables" as *;
+
+.social-media-links {
+    display: flex;
+    justify-content: centre;
+    align-content: center;
+    border-style: none;
+    height: 50px;
+    background-color: $color-background-black;
+    padding-bottom: 10px;
+        &__linkedin { 
+            padding-bottom: 0;
+            background-color: white;
+            color: black;
+        }
+
+        &__cat { padding-bottom: 0;
+
+        .a {
+            background-color: $color-background-black;
+            padding: 0;
+            }
+    }
+}
+
+
+/*
+   
+    */
