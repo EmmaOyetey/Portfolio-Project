@@ -236,7 +236,7 @@ a {
   font-size: larger;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin-bottom: 10px;
+  padding-left: 10px;
 }
 .myPortfolio__projectN {
   display: flex;

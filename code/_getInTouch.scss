@@ -1,0 +1,46 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: centre;
+  /*overflow-x: hidden; may help with images*/
+
+    &__heading {
+      font-family: $heading-font-family;
+      margin-bottom: 30px;
+      font-size: xx-large;
+    }
+
+    &__button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: $color-text-main;
+    background-color: $color-background-main;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
+        &:hover {
+        background-color: #0056b3;
+        }
+
+}
+/*
+Focus effect 
+    .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+Active effect 
+.button:active {
+    transform: translateY(1px);
+}
+*/
