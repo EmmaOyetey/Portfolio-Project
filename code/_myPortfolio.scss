@@ -9,43 +9,59 @@
   text-align: left;
   overflow-x: hidden;  /*remove?*/
 
-    &__project--longlist {
+    &__heading {
+        font-family: $heading-font-family;
+        font-size: larger;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__projectN--longlist { /*if time test  embedding --longlist and --featured under &__projects */
         display: none;
     }
 
-    &__projects--featured {
+
+    &__projectN{ 
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         text-align: left;
-    }
+        
 
-    &__heading {
-        font-size: smaller;
-    }
-
-    &__project-image {
+        &--imageN {
         max-width:100%;
         height: auto;
         background-color: black;
-    }
-
-    &__project-moreInfoNav {
-            height: 20px;
-            display: flex;
-            flex-direction: row ; 
-            justify-content: space-between;
-            align-items: center; 
-    }
-        
-    &__project-skills {
-            display: none;
+        padding-bottom: 20px;
         }
 
+        &--layoutContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+       
+        &--titleN {
+        font-size: medium;
+        padding: 0; 
+        }
+
+        &--linkN {
+            display: flex;
+            flex-direction: row;
+            width: 150px;
+            height:40px;
+        }
+
+       &--skillsN {
+            display: none;
+        } 
+     }
 }
 
 /*desk top version using grid-template-area */
-
+/*
 @media screen and (min-width: 768px) { 
 
     .myPortfolio {
@@ -86,7 +102,7 @@
         background-color: black;
     }
     
-    .myPortfolio__project-moreInfoNav {
+    .myPortfolio__project-moreInfo {
         
         height: 15px;
         font-size:smaller;
@@ -95,7 +111,7 @@
         justify-content: space-between;
         align-items: center;
     
-        &__project-heaer {
+        &__project- {
             max-width:200px;
             max-height:auto
         }
