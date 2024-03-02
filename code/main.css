@@ -17,9 +17,11 @@ $color-button-hover:rgb(7, 1, 26);
 */
 * {
   margin: 0;
+  padding: 5px;
   box-sizing: border-box;
   color: #000000;
   background-color: #ffffff; /*change this later */
+  font-family: inter, sans-serif;
 }
 
 a {
@@ -29,23 +31,20 @@ a {
 
 .navigation {
   height: 60px;
-  font-size: x-small;
+  font-size: small;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px;
 }
 .navigation__my-name {
-  font-size: x-small;
+  font-size: small;
   font-family: cormorant, sans-serif;
   padding: 0;
+  margin-top: 10px;
 }
 .navigation__desktop-links {
   display: none;
-}
-.navigation__project-image {
-  max-width: 100%;
-  width: auto;
-  background-color: black;
 }
 
 /*desk-top version modified to include nav links*/
@@ -67,7 +66,294 @@ a {
     text-align: center;
   }
 }
-/*@use "./intro-info";
-@use "./aboutme";
-@use "./myskills";
-@use "./myPortfolio";*//*# sourceMappingURL=main.css.map */
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0;
+}
+.intro__job-title {
+  font-family: cormorant, sans-serif;
+  font-size: xxx-large;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.intro__blurb {
+  font-family: Inter, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .intro__job-title {
+    font-size: 128px;
+    font-weight: 400;
+    font-family: cormorant, sans-serif;
+    padding: 10px;
+  }
+  .intro__blurb {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Inter", sans-serif;
+    padding: 10px;
+    margin-right: 150px;
+  }
+}
+/*mobile version*/
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-x: hidden;
+}
+.about-me__heading {
+  font-family: cormorant, sans-serif;
+  padding: 10px;
+}
+.about-me__myimage {
+  max-width: 100%;
+  width: auto;
+  background-color: black;
+}
+.about-me__blurb1 {
+  font-family: inter, sans-serif;
+  padding-bottom: 0;
+}
+.about-me__blurb2 {
+  font-family: inter, sans-serif;
+}
+
+/*desk top version using grid-template-area*/
+@media screen and (min-width: 768px) {
+  .about-me {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "heading myimage" "blurb1 myimage" "blurb2 myimage";
+  }
+  .about-me__heading {
+    grid-area: heading;
+  }
+  .about-me__myimage {
+    grid-area: myimage;
+  }
+  .about-me__blurb1 {
+    grid-area: blurb1;
+  }
+  .about-me__blurb2 {
+    grid-area: blurb2;
+  }
+}
+/*
+  .about-me__blurb1 .aboutme__blurb2 {
+    background-color: #444;
+    font-size: 150%;
+  }
+
+  .about-me__heading {
+    color: $color-test-blue-background;
+    font-size: 200%; //*CHANGE */
+/*
+  &__blurb{
+      font-size:16px;
+      font-weight:400;
+      color: $color-text-headings;
+      font-family: Inter, sans-serif;
+  } */
+/*mobile version*/
+.my-skills {
+  display: none;
+}
+
+/*desk top version using grid template and defining grid-template-columns and grid-template-rows */
+@media screen and (min-width: 768px) {
+  .my-skills {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, [col] 1fr);
+    grid-template-rows: repeat(3, [row] auto);
+    font-size: small;
+  }
+  .my-skills__heading {
+    grid-column: col/span 1;
+    grid-row: row 1;
+  }
+  .my-skills__info {
+    grid-column: col 2/span 5;
+    grid-row: row 1;
+  }
+  .my-skills__logos {
+    grid-column: col/span 6;
+    grid-row: row 2;
+  }
+}
+/* alternative code using template area
+
+    .my-skills {
+    display: grid;
+    align-content: stretch;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+                "heading info info info info info"
+                "logos logos logos logos logos logos";
+
+        &__heading {
+        grid-area: heading;
+        }
+
+        &__info {
+        grid-area: info;
+        }
+
+        &__logos {
+        grid-area: logos;
+        }         
+
+    }
+*/
+/*mobile version*/
+.myPortfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-x: hidden; /*remove?*/
+}
+.myPortfolio__project--longlist {
+  display: none;
+}
+.myPortfolio__projects--featured {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+}
+.myPortfolio__heading {
+  font-size: smaller;
+}
+.myPortfolio__project-image {
+  max-width: 100%;
+  height: auto;
+  background-color: black;
+}
+.myPortfolio__project-moreInfoNav {
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.myPortfolio__project-skills {
+  display: none;
+}
+
+/*desk top version using grid-template-area */
+@media screen and (min-width: 768px) {
+  .myPortfolio {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 3fr;
+    grid-template-areas: "heading heading heading" "featured featured featured" "longlist longlist longlist";
+  }
+  .myPortfolio__heading {
+    grid-area: heading;
+    font-size: large;
+  }
+  .myPortfolio__project--featured {
+    grid-area: featured;
+  }
+  .myPortfolio__project--longlist {
+    grid-area: longlist;
+  }
+  .myPortfolio__project {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .myPortfolio__project-image {
+    max-width: 100%;
+    width: auto;
+    background-color: black;
+  }
+  .myPortfolio__project-moreInfoNav {
+    height: 15px;
+    font-size: smaller;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .myPortfolio__project-moreInfoNav__project-heaer {
+    max-width: 200px;
+    max-height: auto;
+  }
+  .myPortfolio__project-moreInfoNav .myPortfolio__project-skills {
+    display: blck;
+  }
+}
+/*
+    .myPortfolio {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 3fr 3fr;
+        grid-template-areas:
+                " heading heading heading"
+                " featured featured featured"
+                " longlist longlist longlist"; 
+
+        &__heading {
+            grid-area: heading;
+            font-size: smaller;
+        }     
+
+        &__project  {
+
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+
+                    &--featured {
+                        grid-area: featured;
+                    }
+
+                    &--longlist  {
+                        grid-area: longlist;
+                    }
+        }
+
+            &__project-image {
+                max-width:100%;
+                width: auto;
+                background-color: black;
+            }
+
+            &__project-moreInfoNav {
+                height: 60px;
+                background-color:$color-test-blue-background ; 
+                display: flex;
+                flex-direction: row ; 
+                justify-content: space-between;
+                align-items: center; 
+            }   
+
+                &__project-image {
+        max-width:100%;
+        height : auto;      
+        background-color: black;
+    }
+}
+    }
+*//*# sourceMappingURL=main.css.map */
