@@ -2,16 +2,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
-/* to change  */
-/* to change
+/*color schemes
+$color-test-blue-background: blue;
+$color-test-orange-text: orange;
+$color-test-pink-text: rgb(218, 6, 109);
+$color-test-green-background: rgb(5, 197, 5)
 
-/*color schemes*/
+
+$font-body: "cormorant" , "sans-serif" ;
+$color-text-body: pink;
+$color-text-portfolio: #09f328;
+$color-text-footer: #160239;
+$color-button-hover:rgb(7, 1, 26);
+*/
 * {
   margin: 0;
-  padding: 10px;
   box-sizing: border-box;
-  font-family: "Courier New", Courier, monospace; /*change this later */
-  color: #000000; /*change this later */
+  color: #000000;
+  background-color: #ffffff; /*change this later */
 }
 
 a {
@@ -21,15 +29,14 @@ a {
 
 .navigation {
   height: 60px;
-  font-size: small;
-  background-color: blue; /*CHANGE -testing*/
+  font-size: x-small;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .navigation__my-name {
-  color: orange; /*CHANGE -testing*/
-  font-family: "Verdana", Geneva, Tahoma, sans-serif; /*CHANGE -testing*/
+  font-size: x-small;
+  font-family: cormorant, sans-serif;
   padding: 0;
 }
 .navigation__desktop-links {
@@ -45,261 +52,22 @@ a {
 @media screen and (min-width: 768px) {
   .navigation {
     height: 60px;
-    background-color: blue; /*CHANGE -testing*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
   }
   .navigation__my-name {
-    color: orange; /*CHANGE -testing*/
-    font-family: "Verdana", Geneva, Tahoma, sans-serif; /*CHANGE -testing*/
+    font-family: cormorant, sans-serif;
     max-width: 200px; /*CHANGE -testing*/
     max-height: auto;
   }
   .navigation__desktop-links {
     display: block;
-    color: rgb(218, 6, 109); /*CHANGE -testing*/
     text-align: center;
   }
 }
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  padding: 0;
-}
-.intro__job-title {
-  color: rgb(218, 6, 109);
-  font-family: cormorant, sans-serif;
-  font-size: xxx-large;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-.intro__blurb {
-  color: orange;
-  font-family: Inter, sans-serif;
-}
-
-/*
-
-@media screen and (min-width: 768px) {
-
-    .intro {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-
-
-        &__job-title {
-            font-size: 128px;
-            font-weight: 400;
-            color: $color-text-headings;
-            font-family: cormorant, sans-serif;
-            padding: 10px;
-        }
-
-        &__blurb{
-            font-size:20px;
-            font-weight:400;
-            color: $color-text-headings;
-            font-family: "Inter", sans-serif;
-            padding: 10px;
-        }
-    }
-}
-
-*/
-/*mobile version*/
-.about-me {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  overflow-x: hidden;
-}
-.about-me__heading {
-  font-family: cormorant, sans-serif;
-  padding: 10px;
-}
-.about-me__myimage {
-  max-width: 100%;
-  width: auto;
-  background-color: black;
-}
-.about-me__blurb1 {
-  font-family: cormorant, sans-serif;
-  color: rgb(5, 197, 5); /*test*/
-  padding-bottom: 0;
-}
-.about-me__blurb2 {
-  font-family: cormorant, sans-serif;
-  color: pink; /*test*/
-}
-
-/*desk top version using grid-template-area*/
-@media screen and (min-width: 768px) {
-  .about-me {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "heading myimage" "blurb1 myimage" "blurb2 myimage";
-  }
-  .about-me__heading {
-    grid-area: heading;
-  }
-  .about-me__myimage {
-    grid-area: myimage;
-  }
-  .about-me__blurb1 {
-    grid-area: blurb1;
-  }
-  .about-me__blurb2 {
-    grid-area: blurb2;
-  }
-}
-/*
-  .about-me__blurb1 .aboutme__blurb2 {
-    background-color: #444;
-    font-size: 150%;
-  }
-
-  .about-me__heading {
-    color: $color-test-blue-background;
-    font-size: 200%; //*CHANGE */
-/*
-  &__blurb{
-      font-size:16px;
-      font-weight:400;
-      color: $color-text-headings;
-      font-family: Inter, sans-serif;
-  } */
-/*mobile version*/
-.my-skills {
-  display: none;
-}
-
-/*desk top version using grid template and defining grid-template-columns and grid-template-rows */
-@media screen and (min-width: 768px) {
-  .my-skills {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(6, [col] 1fr);
-    grid-template-rows: repeat(3, [row] auto);
-    font-size: small;
-  }
-  .my-skills__heading {
-    grid-column: col/span 1;
-    grid-row: row 1;
-  }
-  .my-skills__info {
-    grid-column: col 2/span 5;
-    grid-row: row 1;
-  }
-  .my-skills__logos {
-    grid-column: col/span 6;
-    grid-row: row 2;
-  }
-}
-/* alternative code using template area
-
-    .my-skills {
-    display: grid;
-    align-content: stretch;
-    grid-gap: 10px;
-    grid-template-columns: repeat(6,1fr) ;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas:
-                "heading info info info info info"
-                "logos logos logos logos logos logos";
-
-        &__heading {
-        grid-area: heading;
-        }
-
-        &__info {
-        grid-area: info;
-        }
-
-        &__logos {
-        grid-area: logos;
-        }         
-
-    }
-*/
-/*mobile version*/
-.myPortfolio {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  overflow-x: hidden; /*remove?*/
-}
-.myPortfolio__project--longlist {
-  display: none;
-}
-.myPortfolio__projects--featured {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-}
-.myPortfolio__heading {
-  font-size: smaller;
-}
-.myPortfolio__project-image {
-  max-width: 100%;
-  width: auto;
-  background-color: black;
-}
-.myPortfolio__project-moreInfoNav {
-  height: 60px;
-  background-color: blue; /*CHANGE -testing*/
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.myPortfolio__project-skills {
-  display: none;
-}
-
-/*desk top version using grid-template-area*/
-@media screen and (min-width: 768px) {
-  .myPortfolio {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(3 1fr);
-    grid-template-rows: 1fr 3fr 3fr;
-    grid-template-rows: 2fr 1fr 1fr;
-    grid-template-areas: " heading heading heading" " featured featured featured" " skills skills skills" " project project project" " skills skills skills";
-  }
-  .myPortfolio__heading {
-    grid-area: heading;
-  }
-  .myPortfolio__project--longlist {
-    grid-area: project;
-  }
-  .myPortfolio__project--featured {
-    grid-area: featured;
-  }
-  .myPortfolio__project-skills {
-    grid-area: skills;
-  }
-  .myPortfolio__project-image {
-    max-width: 100%;
-    width: auto;
-    background-color: black;
-  }
-  .myPortfolio__project-moreInfoNav {
-    height: 60px;
-    background-color: blue; /*CHANGE -testing*/
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-}/*# sourceMappingURL=main.css.map */
+/*@use "./intro-info";
+@use "./aboutme";
+@use "./myskills";
+@use "./myPortfolio";*//*# sourceMappingURL=main.css.map */

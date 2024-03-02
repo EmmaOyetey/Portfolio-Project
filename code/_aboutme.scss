@@ -10,7 +10,7 @@
   overflow-x: hidden;
 
     &__heading {
-      font-family: cormorant, sans-serif;
+      font-family: $heading-font-family;
       padding: 10px;
     }
 
@@ -21,13 +21,12 @@
     }
 
     &__blurb1 {
-      font-family: cormorant, sans-serif;
-      color: $color-test-green-background; /*test*/
+      font-family: $paragraph-font-family;
       padding-bottom: 0;
     }
 
     &__blurb2 {
-      font-family: cormorant, sans-serif;
+      font-family: $paragraph-font-family;
       color: pink; /*test*/
     }
   }

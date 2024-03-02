@@ -2,10 +2,11 @@
 
 * {
     margin: 0;
-    padding: 10px;
+    padding: 5px;
     box-sizing: border-box;
-    font-family: $test-font-family; /*change this later */
-    color: $color-text-main ;       /*change this later */
+    color: $color-text-main ;  
+    background-color: $color-background-main;     /*change this later */
+    font-family: $paragraph-font-family;
 }
 
 a {

@@ -10,46 +10,42 @@
 
 
     &__job-title {
-        color: $color-test-pink-text;
-        font-family: cormorant, sans-serif;
+        font-family: $heading-font-family;
         font-size: xxx-large;
         margin-bottom: 20px;
         margin-top: 20px;
     }
     
     &__blurb{
-        color: $color-test-orange-text;
         font-family: Inter, sans-serif;
     }
 }
 
-/*
+
 
 @media screen and (min-width: 768px) {
 
-    .intro {
+.intro {
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         text-align: left;
-        
 
-        &__job-title {
-            font-size: 128px;
-            font-weight: 400;
-            color: $color-text-headings;
-            font-family: cormorant, sans-serif;
-            padding: 10px;
+     &__job-title {
+        font-size: 128px;
+        font-weight: 400;
+        color: $color-text-headings;
+        font-family: cormorant, sans-serif;
+        padding: 10px;
         }
         
-        &__blurb{
+     &__blurb{
             font-size:20px;
             font-weight:400;
             color: $color-text-headings;
             font-family: "Inter", sans-serif;
             padding: 10px;
+            margin-right: 150px;
         }
     }
 }
-
-*/

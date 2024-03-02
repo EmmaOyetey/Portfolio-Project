@@ -3,25 +3,20 @@
 .navigation {
     height: 60px;
     font-size: small;
-    background-color:$color-test-blue-background ; /*CHANGE -testing*/
     display: flex;
     flex-direction: column;
     align-items: center; 
+    padding: 10px;
 
     &__my-name {
-        color: $color-test-orange-text; /*CHANGE -testing*/
-        font-family:$test-font-family-2 ; /*CHANGE -testing*/
+        font-size: small;
+        font-family: $heading-font-family;
         padding: 0;
+        margin-top: 10px;
     }
     
     &__desktop-links {
         display: none;
-    }
-
-    &__project-image {
-        max-width:100%;
-        width: auto;
-        background-color: black;
     }
 }
 
@@ -31,22 +26,19 @@
 
     .navigation {
         height: 60px;
-        background-color:$color-test-blue-background ; /*CHANGE -testing*/
         display: flex;
         flex-direction: row ; 
         justify-content: space-between;
         align-items: center;        
 
             &__my-name {
-                color: $color-test-orange-text; /*CHANGE -testing*/
-                font-family:$test-font-family-2 ; /*CHANGE -testing*/
+                font-family: $heading-font-family;
                 max-width: 200px; /*CHANGE -testing*/
                 max-height: auto;
             }
 
             &__desktop-links {
                 display:block;
-                color: $color-test-pink-text ; /*CHANGE -testing*/
                 text-align: center;   
             }
             
