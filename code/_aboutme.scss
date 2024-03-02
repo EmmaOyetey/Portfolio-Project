@@ -12,13 +12,10 @@
     &__heading {
       font-family: $heading-font-family;
       margin-bottom: 30px;
-
     }
-
     &__myimage {
       max-width:100%;
       width: auto;
-      height: 40px;
       background-color: black;
     }
 
@@ -42,7 +39,7 @@
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 2fr 1fr ;
-        grid-template-rows: repeat(3,1fr);
+        grid-template-rows: 1fr 2fr 2fr;
         grid-template-areas:
                   "heading myimage"
                   "blurb1 myimage"
@@ -50,10 +47,16 @@
 
     &__heading {
         grid-area: heading;
+        margin-bottom: 0;
+        margin-top: 40px;
       } 
 
     &__myimage {
         grid-area: myimage;
+          max-width:100%;
+          width: auto;
+          background-color: black;
+        
       }    
 
     &__blurb1  {
