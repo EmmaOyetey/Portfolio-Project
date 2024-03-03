@@ -66,120 +66,93 @@
 
 @media screen and (min-width: 768px) { 
 
-    .myPortfolio {
+    .myPortfolio  {
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr;
         grid-template-areas:
-            "featured featured featured"
-            "longlist longlist longlist";
-    }
-    
+            "heading heading heading"
+            "featured1 featured2 featured3"
+            "longlist4 longlist5 longlist6";
 
     
-    .myPortfolio__projectN--featured {
-        grid-area: featured;
-    }
-    
-    .myPortfolio__projectN--longlist {
-        grid-area: longlist;
-    }
-}   
-/*    
-    .myPortfolio__project {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-    }
-    
-    .myPortfolio__project-image {
-        max-width: 100%;
-        width: auto;
-        background-color: black;
-    }
-    
-    .myPortfolio__project-moreInfo {
-        
-        height: 15px;
-        font-size:smaller;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    
-        &__project- {
-            max-width:200px;
-            max-height:auto
-        }
-    
-    .myPortfolio__project-skills {
-            display:blck;
-    
-         .myPortfolio__heading {
-        grid-area: heading;
-        font-size: large;
-    }       
-        }
-    }
-    
-    }     
-
-
-
-    /*
-    .myPortfolio {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 3fr 3fr;
-        grid-template-areas:
-                " heading heading heading"
-                " featured featured featured"
-                " longlist longlist longlist"; 
-
         &__heading {
-            grid-area: heading;
-            font-size: smaller;
-        }     
+                grid-area: heading;
+                font-family: $heading-font-family;
+                font-size: medium;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:10px;
+        }
 
-        &__project  {
-
+        &__projectN{ 
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-start;
                 text-align: left;
 
-                    &--featured {
-                        grid-area: featured;
-                    }
-    
-                    &--longlist  {
-                        grid-area: longlist;
-                    }
-        }
+                &--1&--featured {
+                    grid-area: featured1;
+                }
 
-            &__project-image {
+                &--2&--featured {
+                    grid-area:featured2;
+                }
+
+                &--3&--featured {
+                    grid-area:featured3;
+                }
+
+                &--4&--longlist {
+                    grid-area: longlist3;
+                }    
+
+                &--5&--longlist {
+                    grid-area: longlist4 ;
+                }
+
+                &--6& --longlist {
+                    grid-area:longlist6
+                }
+
+                &--imageN {
                 max-width:100%;
-                width: auto;
+                height: auto;
                 background-color: black;
-            }
-
-            &__project-moreInfoNav {
-                height: 60px;
-                background-color:$color-test-blue-background ; 
-                display: flex;
-                flex-direction: row ; 
-                justify-content: space-between;
-                align-items: center; 
-            }   
-
-                &__project-image {
-        max-width:100%;
-        height : auto;      
-        background-color: black;
-    }
+                padding-bottom: 20px;
+                }
+            
+                &--layoutContainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 0;
+                }
+                
+                &--titleN {
+                font-size: medium;
+                padding-top: 15px;
+                padding-left: 0px;
+                }
+            
+                &--linksN {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-end;
+                    padding-right: 0;
+                }
+            
+                &--skillsN {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-start;
+                    padding-right: 0;
+                } 
+        }
+     }
 }
-    }
-*/   
+
+
+

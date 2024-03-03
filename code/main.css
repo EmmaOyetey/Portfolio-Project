@@ -102,7 +102,7 @@ a {
     font-weight: 400;
     font-family: "Inter", sans-serif;
     padding: 10px;
-    margin-right: 750px;
+    margin-right: 500px;
   }
 }
 /*mobile version*/
@@ -286,113 +286,72 @@ a {
     display: grid;
     grid-gap: 10px;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "featured featured featured" "longlist longlist longlist";
+    grid-template-rows: 1fr 4fr 4fr;
+    grid-template-areas: "heading heading heading" "featured1 featured2 featured3" "longlist4 longlist5 longlist6";
   }
-  .myPortfolio__projectN--featured {
-    grid-area: featured;
+  .myPortfolio__heading {
+    grid-area: heading;
+    font-family: cormorant, sans-serif;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
   }
-  .myPortfolio__projectN--longlist {
-    grid-area: longlist;
+  .myPortfolio__projectN {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+  }
+  .myPortfolio__projectN--1 .myPortfolio__projectN--featured {
+    grid-area: featured1;
+  }
+  .myPortfolio__projectN--2 .myPortfolio__projectN--featured {
+    grid-area: featured2;
+  }
+  .myPortfolio__projectN--3 .myPortfolio__projectN--eatured {
+    grid-area: featured3;
+  }
+  .myPortfolio__projectN--4 .myPortfolio__projectN--longlist {
+    grid-area: longlist3;
+  }
+  .myPortfolio__projectN--5 .myPortfolio__projectN--longlist {
+    grid-area: longlist4;
+  }
+  .myPortfolio__projectN--6 .myPortfolio__projectN --longlist {
+    grid-area: longlist6;
+  }
+  .myPortfolio__projectN--imageN {
+    max-width: 100%;
+    height: auto;
+    background-color: black;
+    padding-bottom: 20px;
+  }
+  .myPortfolio__projectN--layoutContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0;
+  }
+  .myPortfolio__projectN--titleN {
+    font-size: medium;
+    padding-top: 15px;
+    padding-left: 0px;
+  }
+  .myPortfolio__projectN--linksN {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  .myPortfolio__projectN--skillsN {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-right: 0;
   }
 }
-/*    
-    .myPortfolio__project {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-    }
-
-    .myPortfolio__project-image {
-        max-width: 100%;
-        width: auto;
-        background-color: black;
-    }
-
-    .myPortfolio__project-moreInfo {
-
-        height: 15px;
-        font-size:smaller;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        &__project- {
-            max-width:200px;
-            max-height:auto
-        }
-
-    .myPortfolio__project-skills {
-            display:blck;
-
-         .myPortfolio__heading {
-        grid-area: heading;
-        font-size: large;
-    }       
-        }
-    }
-
-    }     
-
-
-
-    /*
-    .myPortfolio {
-        display: grid;
-        grid-gap: 10px;
-        grid-template-columns: 1fr 1fr 1fr ;
-        grid-template-rows: 1fr 3fr 3fr;
-        grid-template-areas:
-                " heading heading heading"
-                " featured featured featured"
-                " longlist longlist longlist"; 
-
-        &__heading {
-            grid-area: heading;
-            font-size: smaller;
-        }     
-
-        &__project  {
-
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                text-align: left;
-
-                    &--featured {
-                        grid-area: featured;
-                    }
-
-                    &--longlist  {
-                        grid-area: longlist;
-                    }
-        }
-
-            &__project-image {
-                max-width:100%;
-                width: auto;
-                background-color: black;
-            }
-
-            &__project-moreInfoNav {
-                height: 60px;
-                background-color:$color-test-blue-background ; 
-                display: flex;
-                flex-direction: row ; 
-                justify-content: space-between;
-                align-items: center; 
-            }   
-
-                &__project-image {
-        max-width:100%;
-        height : auto;      
-        background-color: black;
-    }
-}
-    }
-*/
 .social-media-links {
   display: flex;
   justify-content: centre;
