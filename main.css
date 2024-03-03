@@ -23,6 +23,8 @@ $color-button-hover:rgb(7, 1, 26);
 */
 * {
   margin: 0;
+  margin-right: 3px;
+  margin-left: 3px;
   padding: 5px;
   box-sizing: border-box;
   color: #000000;
@@ -66,10 +68,12 @@ body {
   padding: 10px;
 }
 .navigation__my-name {
-  font-size: medium;
+  font-size: 22px;
+  font-weight: 800;
   font-family: cormorant, sans-serif;
   padding: 0;
-  margin-top: 10px;
+  text-align: center;
+  margin-top: 5px;
 }
 .navigation__desktop-links {
   display: none;
@@ -99,7 +103,9 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  padding: 10px;
+  border-style: solid;
+  border-color: rgb(24, 8, 8);
+  border-width: 2px;
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
@@ -112,7 +118,7 @@ body {
   font-family: inter, sans-serif;
   text-align: right;
   font-weight: 500;
-  color: rgb(31, 2, 2);
+  color: rgb(14, 2, 2);
 }
 
 @media screen and (min-width: 768px) {
@@ -148,16 +154,19 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  background-color: rgb(24, 8, 8);
   /*overflow-x: hidden; may help with images*/
 }
 .about-me__heading {
   font-family: cormorant, sans-serif;
-  margin-bottom: 30px;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: white;
 }
 .about-me__myimage {
-  max-width: 100%;
+  max-width: 50%;
+  height: auto;
   width: auto;
-  background-color: black;
 }
 .about-me__blurb1 {
   font-family: inter, sans-serif;

@@ -6,8 +6,9 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    padding:10px;
-    
+    border-style: solid; 
+    border-color: $color-border-darkBrown; 
+    border-width: 2px;
 
 
     &__job-title {

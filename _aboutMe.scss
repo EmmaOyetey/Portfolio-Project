@@ -7,16 +7,20 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  background-color: $color-background-darkBrown;
+  
   /*overflow-x: hidden; may help with images*/
 
     &__heading {
       font-family: $heading-font-family;
-      margin-bottom: 30px;
+      padding: 10px;
+      margin-bottom: 10px;
+      color: white;
     }
     &__myimage {
-      max-width:100%;
-      width: auto;
-      background-color: black;
+      max-width:50%;
+      height: auto;
+      width:auto;
     }
 
     &__blurb1 {
