@@ -8,6 +8,13 @@
   justify-content: flex-start;
   text-align: left;
   overflow-x: hidden;  /*remove?*/
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding-bottom: 10px;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
+  height: auto;
+  
 
     &__heading {
         font-family: $heading-font-family;
@@ -15,7 +22,10 @@
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left:10px;
-       
+        background-color: $color-background-main;
+        margin-bottom: 7px;
+        opacity: 70%;
+        color: $color-text-darkBrown;
     }
 
     &__projectN{ 
@@ -23,16 +33,23 @@
         flex-direction: column;
         justify-content: flex-start;
         text-align: left;
+        background-color: $color-background-main;
+        padding: 5px;
+        color:$color-text-darkBrown ;
         
         &--longlist {
             display: none;
         }
 
         &--imageN {
-        max-width:100%;
-        height: auto;
+        background-position: center;
         background-color: black;
         padding-bottom: 20px;
+        max-width: 100%; /* Ensure the image doesn't exceed its container */
+        height: auto;
+        max-height: auto;
+        object-fit: cover;
+        
         }
 
         &--layoutContainer {
@@ -44,9 +61,10 @@
         }
        
         &--titleN {
-        font-size: medium;
-        padding-top: 15px;
+        font-size: 10px;
+        padding-top: 10px;
         padding-left: 0px;
+        text-align: center;
         }
 
         &--linksN {
@@ -54,6 +72,8 @@
             flex-direction: row;
             justify-content:flex-end;
             padding-right: 0;
+            max-height: 10px;
+            margin-top: 0;
         }
 
        &--skillsN {
@@ -82,7 +102,6 @@
                 font-family: $heading-font-family;
                 font-size: medium;
                 padding-top: 10px;
-                padding-bottom: 10px;
                 padding-left:10px;
         }
 
@@ -119,6 +138,7 @@
                 &--imageN {
                 max-width:100%;
                 height: auto;
+                max-height: 240px;
                 background-color: black;
                 padding-bottom: 20px;
                 }
@@ -132,8 +152,7 @@
                 }
                 
                 &--titleN {
-                font-size: medium;
-                padding-top: 15px;
+                font-size: 14px;
                 padding-left: 0px;
                 }
             
@@ -150,7 +169,7 @@
                     justify-content:flex-start;
                     padding-right: 0;
                 } 
-        }
+            }
      }
 }
 

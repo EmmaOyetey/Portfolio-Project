@@ -7,33 +7,67 @@
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  background-color: $color-background-darkBrown;
-  
-  /*overflow-x: hidden; may help with images*/
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+  linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
 
     &__heading {
       font-family: $heading-font-family;
-      padding: 10px;
-      margin-bottom: 10px;
-      color: white;
+      color: $color-text-darkBrown;
+      text-align: right;
+      font-size: 25px;
+      font-weight: 500;
+      font-style: bold;
+      background-image: transparent;
+ /*   text-shadow: 
+      -1px -1px 0 #3b2f2f,
+       1px -1px 0 #1e0a0a,
+      -1px  1px 0 #3b2f2f,
+       1px  1px 0 #320b0b,
+      0px 0px 5px #fff; *//* White text shadow with a blur radius of 5px */ /* White text shadow with a blur radius of 5px */
     }
+         
     &__myimage {
-      max-width:50%;
+      max-width: 100%;
       height: auto;
-      width:auto;
-    }
+      border-color: $color-background-darkBrown;
+      border-style: solid; 
+      border-width: 6px;
+      text-align:center;
+      margin-top: 7px;
+      margin-bottom: 20px;
+      }
 
     &__blurb1 {
       font-family: $paragraph-font-family;
-      padding-bottom: 5;
-      margin-top: 30px;
+      margin-top: 25px;
+      background-color: transparent;
+      color: $color-text-darkBrown;
+      margin: 5px;
+      margin-bottom: 0;
+      background-color: $color-background-main;
+      opacity: 70%;
+      
     }
 
+
+
     &__blurb2 {
+      display: none;
+    }
+    
+    /*{
       font-family: $paragraph-font-family;
       margin-bottom: 30px;
+      background-color: $color-background-main;
+      color: $color-text-darkBrown;
+      margin: 5px;
+      margin-top: 0;
     }
-  }
+    */
+}
 
 /*desk top version using grid-template-area*/
 
@@ -58,16 +92,18 @@
     &__myimage {
         grid-area: myimage;
           max-width:100%;
-          width: auto;
+          height: auto;
           background-color: black;
       }    
 
     &__blurb1  {
         grid-area: blurb1;
-      } 
+        padding: 10px;
+      }  
 
     &__blurb2  {
         grid-area: blurb2;
+        padding: 10px;
       } 
            
 

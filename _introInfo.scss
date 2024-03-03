@@ -6,20 +6,21 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
+    /*
     border-style: solid; 
     border-color: $color-border-darkBrown; 
     border-width: 2px;
-
+*/
 
     &__job-title {
         font-family: $heading-font-family;
         font-size: 35px;
-        font-weight: 800;
-        color: $color-text-white;
-        text-shadow: -1px -1px 0 #3b2f2f,  
+        font-weight: 200;
+        color: $color-text-darkBrown;
+        /*text-shadow: -1px -1px 0 #3b2f2f,  
         1px -1px 0 #1e0a0a,
        -1px  1px 0 #3b2f2f,
-        1px  1px 0 #320b0b;
+        1px  1px 0 #320b0b;*/
     }
     
     &__blurb{
@@ -27,6 +28,7 @@
         text-align: right;
         font-weight: 500;
         color: $color-text-darkBrown;
+        font-size: 18;
 
     }
 }

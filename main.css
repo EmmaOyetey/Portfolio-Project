@@ -103,22 +103,28 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  border-style: solid;
-  border-color: rgb(24, 8, 8);
-  border-width: 2px;
+  /*
+      border-style: solid; 
+      border-color: $color-border-darkBrown; 
+      border-width: 2px;
+  */
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
   font-size: 35px;
-  font-weight: 800;
-  color: rgb(253, 245, 245);
-  text-shadow: -1px -1px 0 #3b2f2f, 1px -1px 0 #1e0a0a, -1px 1px 0 #3b2f2f, 1px 1px 0 #320b0b;
+  font-weight: 200;
+  color: rgb(14, 2, 2);
+  /*text-shadow: -1px -1px 0 #3b2f2f,  
+   1px -1px 0 #1e0a0a,
+  -1px  1px 0 #3b2f2f,
+   1px  1px 0 #320b0b;*/
 }
 .intro__blurb {
   font-family: inter, sans-serif;
   text-align: right;
   font-weight: 500;
   color: rgb(14, 2, 2);
+  font-size: 18;
 }
 
 @media screen and (min-width: 768px) {
@@ -154,28 +160,57 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  background-color: rgb(24, 8, 8);
-  /*overflow-x: hidden; may help with images*/
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  /*{
+    font-family: $paragraph-font-family;
+    margin-bottom: 30px;
+    background-color: $color-background-main;
+    color: $color-text-darkBrown;
+    margin: 5px;
+    margin-top: 0;
+  }
+  */
 }
 .about-me__heading {
   font-family: cormorant, sans-serif;
-  padding: 10px;
-  margin-bottom: 10px;
-  color: white;
+  color: rgb(14, 2, 2);
+  text-align: right;
+  font-size: 25px;
+  font-weight: 500;
+  font-style: bold;
+  background-image: transparent;
+  /*   text-shadow: 
+       -1px -1px 0 #3b2f2f,
+        1px -1px 0 #1e0a0a,
+       -1px  1px 0 #3b2f2f,
+        1px  1px 0 #320b0b,
+       0px 0px 5px #fff; */ /* White text shadow with a blur radius of 5px */ /* White text shadow with a blur radius of 5px */
 }
 .about-me__myimage {
-  max-width: 50%;
+  max-width: 100%;
   height: auto;
-  width: auto;
+  border-color: rgb(24, 8, 8);
+  border-style: solid;
+  border-width: 6px;
+  text-align: center;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 .about-me__blurb1 {
   font-family: inter, sans-serif;
-  padding-bottom: 5;
-  margin-top: 30px;
+  margin-top: 25px;
+  background-color: transparent;
+  color: rgb(14, 2, 2);
+  margin: 5px;
+  margin-bottom: 0;
+  background-color: #ffffff;
+  opacity: 70%;
 }
 .about-me__blurb2 {
-  font-family: inter, sans-serif;
-  margin-bottom: 30px;
+  display: none;
 }
 
 /*desk top version using grid-template-area*/
@@ -195,14 +230,16 @@ body {
   .about-me__myimage {
     grid-area: myimage;
     max-width: 100%;
-    width: auto;
+    height: auto;
     background-color: black;
   }
   .about-me__blurb1 {
     grid-area: blurb1;
+    padding: 10px;
   }
   .about-me__blurb2 {
     grid-area: blurb2;
+    padding: 10px;
   }
 }
 /*
@@ -287,6 +324,12 @@ body {
   justify-content: flex-start;
   text-align: left;
   overflow-x: hidden; /*remove?*/
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  padding-bottom: 10px;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
+  height: auto;
 }
 .myPortfolio__heading {
   font-family: cormorant, sans-serif;
@@ -294,21 +337,32 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
+  background-color: #ffffff;
+  margin-bottom: 7px;
+  opacity: 70%;
+  color: rgb(14, 2, 2);
 }
 .myPortfolio__projectN {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  background-color: #ffffff;
+  padding: 5px;
+  color: rgb(14, 2, 2);
 }
 .myPortfolio__projectN--longlist {
   display: none;
 }
 .myPortfolio__projectN--imageN {
-  max-width: 100%;
-  height: auto;
+  background-position: center;
   background-color: black;
   padding-bottom: 20px;
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  height: auto;
+  max-height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .myPortfolio__projectN--layoutContainer {
   display: flex;
@@ -318,15 +372,18 @@ body {
   padding: 0;
 }
 .myPortfolio__projectN--titleN {
-  font-size: medium;
-  padding-top: 15px;
+  font-size: 10px;
+  padding-top: 10px;
   padding-left: 0px;
+  text-align: center;
 }
 .myPortfolio__projectN--linksN {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   padding-right: 0;
+  max-height: 10px;
+  margin-top: 0;
 }
 .myPortfolio__projectN--skillsN {
   display: none;
@@ -346,7 +403,6 @@ body {
     font-family: cormorant, sans-serif;
     font-size: medium;
     padding-top: 10px;
-    padding-bottom: 10px;
     padding-left: 10px;
   }
   .myPortfolio__projectN {
@@ -376,6 +432,7 @@ body {
   .myPortfolio__projectN--imageN {
     max-width: 100%;
     height: auto;
+    max-height: 240px;
     background-color: black;
     padding-bottom: 20px;
   }
@@ -387,8 +444,7 @@ body {
     padding: 0;
   }
   .myPortfolio__projectN--titleN {
-    font-size: medium;
-    padding-top: 15px;
+    font-size: 14px;
     padding-left: 0px;
   }
   .myPortfolio__projectN--linksN {
