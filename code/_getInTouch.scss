@@ -5,27 +5,33 @@
 .get-in-touch {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: centre;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
   /*overflow-x: hidden; may help with images*/
 
     &__heading {
+      display: flex;
       font-family: $heading-font-family;
       margin-bottom: 30px;
       font-size: xx-large;
     }
+/*move button to base and add modifier --contact*/
+    &__button {  
+      display: flex;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $color-text-main;
+      background-color: $color-background-main;
+      border: 2px single black;
+      border-radius: 5px; 
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
 
-    &__button {   /*think this is currently in base hence not working*/
-    display: inline-block;
-    padding: 10px 20px;
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: $color-text-main;
-    background-color: $color-background-main;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
     }
         &:hover {
         background-color: #0056b3;
