@@ -34,13 +34,27 @@ a {
   cursor: pointer;
 }
 
+/*
+
 body {
-  /* Set background image */
-  background-image: "./image/backGroundImageMed-brick.jpg";
+    font-size: 1.5em;
+    color: #fe7f88;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  */
+.intro {
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
   /* Ensure the background image covers the entire viewport */
   background-size: cover;
   background-position: center;
-  /* Create a linear gradient overlay */
+  /* Overlay with a linear gradient */
+  background-blend-mode: overlay;
+}
+
+.intro {
+  background-color: transparent;
 }
 
 .navigation {
@@ -85,24 +99,28 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  margin-bottom: 20px;
+  padding: 10px;
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
-  font-size: 55px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  font-size: 35px;
+  font-weight: 800;
+  color: rgb(253, 245, 245);
+  text-shadow: -1px -1px 0 #3b2f2f, 1px -1px 0 #1e0a0a, -1px 1px 0 #3b2f2f, 1px 1px 0 #320b0b;
 }
 .intro__blurb {
-  font-family: Inter, sans-serif;
+  font-family: inter, sans-serif;
+  text-align: right;
+  font-weight: 500;
+  color: rgb(31, 2, 2);
 }
 
 @media screen and (min-width: 768px) {
   .intro {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    text-align: left;
+    justify-content: centre;
+    text-align: center;
   }
   .intro__job-title {
     align-content: center;
@@ -111,12 +129,17 @@ body {
     font-family: cormorant, sans-serif;
     padding: 10px;
   }
+  .intro__job-title__job-title {
+    font-family: cormorant, sans-serif;
+    font-size: 25px;
+    font-weight: 800;
+    color: rgb(253, 245, 245);
+    text-shadow: -1px -1px 0 #3b2f2f, 1px -1px 0 #1e0a0a, -1px 1px 0 #3b2f2f, 1px 1px 0 #320b0b;
+  }
   .intro__blurb {
     font-size: 20px;
     font-weight: 400;
-    font-family: "Inter", sans-serif;
-    padding: 10px;
-    margin-right: 500px;
+    font-family: inter, sans-serif;
   }
 }
 /*mobile version*/

@@ -29,8 +29,54 @@ a {
     cursor: pointer;
 }
 
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    padding:10px;
+    
 
+
+    &__job-title {
+        font-family: $heading-font-family;
+        font-size: 35px;
+        font-weight: 800;
+        margin-bottom: 0px;
+        margin-top: 5px;
+        color: $color-text-white;
+        text-shadow: -1px -1px 0 #3b2f2f,  
+        1px -1px 0 #1e0a0a,
+       -1px  1px 0 #3b2f2f,
+        1px  1px 0 #320b0b;
+        
+    }
+    
+    &__blurb{
+        font-family: $paragraph-font-family;
+        text-align: right;
+        font-weight: 500;
+        color: $color-text-darkBrown;
+
+    }
+
+
+
+/*
 @media screen and (min-width: 768px) { 
     
     
 }
+*/
+
+&__job-title {
+    font-family: $heading-font-family;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    color: $color-text-white;
+    text-shadow: -1px -1px 0 #3b2f2f,  
+    1px -1px 0 #1e0a0a,
+   -1px  1px 0 #3b2f2f,
+    1px  1px 0 #320b0b;

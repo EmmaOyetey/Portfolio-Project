@@ -5,6 +5,7 @@
     padding: 5px;
     box-sizing: border-box;
     color: $color-text-main ;  
+    
  
     font-family: $paragraph-font-family;
 }
@@ -14,14 +15,31 @@ a {
     cursor: pointer;
 }
 
+/*
+
 body {
-    /* Set background image */
-    background-image: "./image/backGroundImageMed-brick.jpg";
+    font-size: 1.5em;
+    color: #fe7f88;
+    background-image: none;
+    background-color: transparent;
+  }
+
+  */
+  
+
+
+  .intro {
+
+    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+
     /* Ensure the background image covers the entire viewport */
     background-size: cover;
     background-position: center;
-    /* Create a linear gradient overlay */
-    
+    /* Overlay with a linear gradient */
+    background-blend-mode: overlay;
 }
-
-
+  
+.intro {
+    background-color: transparent;
+}
