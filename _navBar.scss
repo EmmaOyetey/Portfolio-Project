@@ -1,0 +1,47 @@
+@use "./variables" as *;
+
+.navigation {
+    height: 60px;
+    font-size: 36px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 10px;
+
+    &__my-name {
+        font-size: medium;
+        font-family: $heading-font-family;
+        padding: 0;
+        margin-top: 10px;
+    }
+    
+    &__desktop-links {
+        display: none;
+    }
+}
+
+/*desk-top version modified to include nav links*/
+
+@media screen and (min-width: 768px) { 
+
+    .navigation {
+        height: 60px;
+        display: flex;
+        flex-direction: row ; 
+        justify-content: space-between;
+        align-items: center;        
+
+            &__my-name {
+                font-family: $heading-font-family;
+                max-width: 200px; /*CHANGE -testing*/
+                max-height: auto;
+            }
+
+            &__desktop-links {
+                display:block;
+                text-align: center;   
+            }
+            
+    }
+
+}

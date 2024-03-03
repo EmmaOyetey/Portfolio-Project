@@ -1,0 +1,89 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.about-me {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  /*overflow-x: hidden; may help with images*/
+
+    &__heading {
+      font-family: $heading-font-family;
+      margin-bottom: 30px;
+    }
+    &__myimage {
+      max-width:100%;
+      width: auto;
+      background-color: black;
+    }
+
+    &__blurb1 {
+      font-family: $paragraph-font-family;
+      padding-bottom: 5;
+      margin-top: 30px;
+    }
+
+    &__blurb2 {
+      font-family: $paragraph-font-family;
+      margin-bottom: 30px;
+    }
+  }
+
+/*desk top version using grid-template-area*/
+
+@media screen and (min-width: 768px) { 
+  
+  .about-me {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 2fr 1fr ;
+        grid-template-rows: 1fr 2fr 2fr;
+        grid-template-areas:
+                  "heading myimage"
+                  "blurb1 myimage"
+                  "blurb2 myimage";
+
+    &__heading {
+        grid-area: heading;
+        margin-bottom: 0;
+        margin-top: 40px;
+      } 
+
+    &__myimage {
+        grid-area: myimage;
+          max-width:100%;
+          width: auto;
+          background-color: black;
+      }    
+
+    &__blurb1  {
+        grid-area: blurb1;
+      } 
+
+    &__blurb2  {
+        grid-area: blurb2;
+      } 
+           
+
+  }
+
+}
+/*
+  .about-me__blurb1 .aboutme__blurb2 {
+    background-color: #444;
+    font-size: 150%;
+  }
+
+  .about-me__heading {
+    color: $color-test-blue-background;
+    font-size: 200%; //*CHANGE */
+   
+  /*
+    &__blurb{
+        font-size:16px;
+        font-weight:400;
+        color: $color-text-headings;
+        font-family: Inter, sans-serif;
+    } */

@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 30px;
+
+    &__heading {
+      display: flex;
+      font-family: $heading-font-family;
+      margin-bottom: 30px;
+      font-size: xx-large;
+    }
+/*move button to base and add modifier --contact*/
+    &__button {  
+      display: flex;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $color-text-main;
+      background-color: $color-background-main;
+      border: 2px single black;
+      border-radius: 5px; 
+      padding: 10px;
+      padding-left: 20px;
+      padding-right: 20px;
+
+    }
+        &:hover {
+        background-color: #0056b3;
+        }
+
+}
+/*
+Focus effect 
+    .button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+
+Active effect 
+.button:active {
+    transform: translateY(1px);
+}
+*/

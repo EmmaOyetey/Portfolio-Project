@@ -1,0 +1,27 @@
+@use "./variables" as*;
+
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    color: $color-text-main ;  
+ 
+    font-family: $paragraph-font-family;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    /* Set background image */
+    background-image: "./image/backGroundImageMed-brick.jpg";
+    /* Ensure the background image covers the entire viewport */
+    background-size: cover;
+    background-position: center;
+    /* Create a linear gradient overlay */
+    
+}
+
+

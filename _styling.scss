@@ -1,0 +1,36 @@
+
+Mobile styling
+
+* { background-color: #219f75;
+    font-family: $paragraph-font-family; 
+    margin: 0;
+}
+
+* { padding: 5px;
+    box-sizing: border-box;
+    color: $color-text-main ;  
+    
+    
+}
+
+
+body {
+    /* Set background image */
+    background-image: "./image/backGroundImageMed-brick.jpg";
+    /* Ensure the background image covers the entire viewport */
+    background-size: cover;
+    background-position: center;
+    /* Create a linear gradient overlay */
+    background: linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 768px) { 
+    
+    
+}

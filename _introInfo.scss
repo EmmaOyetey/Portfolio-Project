@@ -1,0 +1,51 @@
+@use "./variables" as *;
+
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    margin-bottom: 20px;
+
+
+    &__job-title {
+        font-family: $heading-font-family;
+        font-size: 55px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    &__blurb{
+        font-family: Inter, sans-serif;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+.intro {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        
+
+     &__job-title {
+        align-content: center;
+        font-size: 115px;
+        font-weight: 400;
+        font-family: cormorant, sans-serif;
+        padding: 10px;
+        }
+        
+     &__blurb{
+            font-size:20px;
+            font-weight:400;
+            font-family: "Inter", sans-serif;
+            padding: 10px;
+            margin-right: 500px;
+        }
+    }
+}

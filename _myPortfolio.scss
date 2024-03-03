@@ -1,0 +1,158 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.myPortfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  overflow-x: hidden;  /*remove?*/
+
+    &__heading {
+        font-family: $heading-font-family;
+        font-size: larger;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left:10px;
+       
+    }
+
+    &__projectN{ 
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        
+        &--longlist {
+            display: none;
+        }
+
+        &--imageN {
+        max-width:100%;
+        height: auto;
+        background-color: black;
+        padding-bottom: 20px;
+        }
+
+        &--layoutContainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 0;
+        }
+       
+        &--titleN {
+        font-size: medium;
+        padding-top: 15px;
+        padding-left: 0px;
+        }
+
+        &--linksN {
+            display: flex;
+            flex-direction: row;
+            justify-content:flex-end;
+            padding-right: 0;
+        }
+
+       &--skillsN {
+            display: none;
+        } 
+    }
+}
+
+/*desk top version using grid-template-area */
+
+@media screen and (min-width: 768px) { 
+
+    .myPortfolio  {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-areas:
+            "heading heading heading"
+            "featured1 featured2 featured3"
+            "longlist4 longlist5 longlist6";
+
+    
+        &__heading {
+                grid-area: heading;
+                font-family: $heading-font-family;
+                font-size: medium;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-left:10px;
+        }
+
+        &__projectN{ 
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+
+                &--1 &--featured {
+                    grid-area: featured1;
+                }
+
+                &--2 &--featured {
+                    grid-area:featured2;
+                }
+
+                &--3 &--featured  {
+                    grid-area:featured3;
+                }
+
+                &--4 &--longlist {
+                    grid-area: longlist3;
+                }    
+
+                &--5 &--longlist {
+                    grid-area: longlist4 ;
+                }
+
+                &--6 & --longlist {
+                    grid-area:longlist6
+                }
+
+                &--imageN {
+                max-width:100%;
+                height: auto;
+                background-color: black;
+                padding-bottom: 20px;
+                }
+            
+                &--layoutContainer {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    padding: 0;
+                }
+                
+                &--titleN {
+                font-size: medium;
+                padding-top: 15px;
+                padding-left: 0px;
+                }
+            
+                &--linksN {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-end;
+                    padding-right: 0;
+                }
+            
+                &--skillsN {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content:flex-start;
+                    padding-right: 0;
+                } 
+        }
+     }
+}
+
+
+

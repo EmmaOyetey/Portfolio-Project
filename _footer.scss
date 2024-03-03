@@ -1,0 +1,48 @@
+@use "./variables" as *;
+/*
+.social-media-links {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-align: center;
+    height: 60px;
+    background-color: $color-background-black;
+    padding: 10px;
+    
+*/
+/*
+    & __icon {
+    display: flex;
+    padding: 20px;
+    align-items: center;    
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%; /* Create a circle shape */
+   /* width: 400px; *//* Adjust width as needed */
+    /*height: 400px;*/ /* Adjust height as needed */
+    
+     /* Add border */
+    
+   /* } 
+
+&.a {    background-color: yellow;
+            padding: 0; }
+}
+
+   */
+
+   .social-media-links {
+
+    background-color: black;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+
+     &__a {
+        display: flex;
+        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border-radius: 50%; 
+     }
+   }

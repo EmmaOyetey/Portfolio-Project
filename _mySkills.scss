@@ -1,0 +1,70 @@
+@use "./variables" as *;
+
+/*mobile version*/
+
+.my-skills {
+    display: none;
+}
+/*desk top version using grid template and defining grid-template-columns and grid-template-rows */
+
+@media screen and (min-width: 768px) { 
+
+    .my-skills{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(6, [col] 1fr ) ;
+        grid-template-rows: repeat(3, [row] auto  );
+        font-size: small;
+        
+        &__heading { 
+                grid-column: col / span 1;
+                grid-row: row 1;
+        }
+
+        &__info {
+                grid-column: col 2 / span 5 ;
+                grid-row: row 1;
+        }
+
+        &__logos {
+                grid-column: col / span 6;
+                grid-row: row 2 ;
+        }
+        
+    }
+ 
+    .my-skills__logos {
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+        max-height: 70px;
+        
+    }
+}
+
+/* alternative code using template area
+
+    .my-skills {
+    display: grid;
+    align-content: stretch;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6,1fr) ;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas:
+                "heading info info info info info"
+                "logos logos logos logos logos logos";
+      
+        &__heading {
+        grid-area: heading;
+        }
+  
+        &__info {
+        grid-area: info;
+        }
+  
+        &__logos {
+        grid-area: logos;
+        }         
+
+    }
+*/
