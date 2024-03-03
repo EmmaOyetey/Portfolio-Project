@@ -14,6 +14,11 @@
   padding-bottom: 10px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
   height: auto;
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+  linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
   
 
     &__heading {
@@ -47,7 +52,7 @@
         padding-bottom: 20px;
         max-width: 100%; /* Ensure the image doesn't exceed its container */
         height: auto;
-        max-height: auto;
+        max-height: 200px;
         object-fit: cover;
         
         }
@@ -64,7 +69,7 @@
         font-size: 10px;
         padding-top: 10px;
         padding-left: 0px;
-        text-align: center;
+        text-align:left;
         }
 
         &--linksN {

@@ -60,7 +60,7 @@ body {
 }
 
 .navigation {
-  height: 60px;
+  height: 40px;
   font-size: 36px;
   display: flex;
   flex-direction: column;
@@ -74,6 +74,7 @@ body {
   padding: 0;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 5px;
 }
 .navigation__desktop-links {
   display: none;
@@ -164,6 +165,7 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  padding-bottom: 20px;
   /*{
     font-family: $paragraph-font-family;
     margin-bottom: 30px;
@@ -178,7 +180,7 @@ body {
   font-family: cormorant, sans-serif;
   color: rgb(14, 2, 2);
   text-align: right;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 500;
   font-style: bold;
   background-image: transparent;
@@ -192,7 +194,7 @@ body {
 .about-me__myimage {
   max-width: 100%;
   height: auto;
-  border-color: rgb(24, 8, 8);
+  border-color: #ffffff;
   border-style: solid;
   border-width: 6px;
   text-align: center;
@@ -206,8 +208,8 @@ body {
   color: rgb(14, 2, 2);
   margin: 5px;
   margin-bottom: 0;
-  background-color: #ffffff;
-  opacity: 70%;
+  /*background-color: $color-background-main;
+  opacity: 70%;*/
 }
 .about-me__blurb2 {
   display: none;
@@ -330,6 +332,10 @@ body {
   padding-bottom: 10px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
   height: auto;
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
 }
 .myPortfolio__heading {
   font-family: cormorant, sans-serif;
@@ -360,7 +366,7 @@ body {
   padding-bottom: 20px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   height: auto;
-  max-height: auto;
+  max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -375,7 +381,7 @@ body {
   font-size: 10px;
   padding-top: 10px;
   padding-left: 0px;
-  text-align: center;
+  text-align: left;
 }
 .myPortfolio__projectN--linksN {
   display: flex;
@@ -516,7 +522,8 @@ body {
 .get-in-touch__heading {
   display: flex;
   font-family: cormorant, sans-serif;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  margin-top: 10px;
   font-size: xx-large;
 }
 .get-in-touch__button {

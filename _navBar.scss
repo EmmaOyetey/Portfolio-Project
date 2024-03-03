@@ -1,7 +1,7 @@
 @use "./variables" as *;
 
 .navigation {
-  height: 60px;
+  height: 40px;
   font-size: 36px;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,7 @@
     padding: 0;
     text-align: center;
     margin-top: 5px;
+    margin-bottom: 5px;
   }
 
   &__desktop-links {
