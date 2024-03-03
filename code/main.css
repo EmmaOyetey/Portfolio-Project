@@ -397,8 +397,9 @@ a {
   display: flex;
   justify-content: space-between;
 }
-.social-media-links __icon {
+.social-media-links__a {
   display: flex;
+  padding: 20px;
   justify-content: center;
   align-items: center;
   background-color: white;

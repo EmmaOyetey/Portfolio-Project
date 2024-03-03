@@ -33,13 +33,13 @@
    .social-media-links {
 
     background-color: black;
-    height: 80px;
+    height: 50px;
     display: flex;
     justify-content: space-between;
 
      &__a {
         display: flex;
-        padding: 20px
+        padding: 20px;
         justify-content: center;
         align-items: center;
         background-color: white;
