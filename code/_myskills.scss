@@ -30,8 +30,15 @@
                 grid-column: col / span 6;
                 grid-row: row 2 ;
         }
-
-    }  
+        
+    }
+ 
+    .my-skills__logos {
+        display: flex;
+        justify-content: center;
+        background-color: aqua;
+        padding: 10px;
+    }
 }
 
 /* alternative code using template area

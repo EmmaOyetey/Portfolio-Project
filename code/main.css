@@ -201,6 +201,12 @@ a {
     grid-column: col/span 6;
     grid-row: row 2;
   }
+  .my-skills__logos {
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+    padding: 10px;
+  }
 }
 /* alternative code using template area
 
@@ -309,7 +315,7 @@ a {
   .myPortfolio__projectN--2 .myPortfolio__projectN--featured {
     grid-area: featured2;
   }
-  .myPortfolio__projectN--3 .myPortfolio__projectN--eatured {
+  .myPortfolio__projectN--3 .myPortfolio__projectN--featured {
     grid-area: featured3;
   }
   .myPortfolio__projectN--4 .myPortfolio__projectN--longlist {

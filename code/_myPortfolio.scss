@@ -92,27 +92,27 @@
                 justify-content: flex-start;
                 text-align: left;
 
-                &--1&--featured {
+                &--1 &--featured {
                     grid-area: featured1;
                 }
 
-                &--2&--featured {
+                &--2 &--featured {
                     grid-area:featured2;
                 }
 
-                &--3&--featured {
+                &--3 &--featured  {
                     grid-area:featured3;
                 }
 
-                &--4&--longlist {
+                &--4 &--longlist {
                     grid-area: longlist3;
                 }    
 
-                &--5&--longlist {
+                &--5 &--longlist {
                     grid-area: longlist4 ;
                 }
 
-                &--6& --longlist {
+                &--6 & --longlist {
                     grid-area:longlist6
                 }
 
