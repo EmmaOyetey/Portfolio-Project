@@ -8,31 +8,36 @@
   justify-content: flex-start;
   text-align: left;
   background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-  linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  padding-bottom: 20px;
+    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+    /* ^Overlay with a linear gradient */
+    /* Ensure the background image covers the entire viewport */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: transparent; /*only need this if we set a background color) */
+  
+  /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 
     &__heading {
       font-family: $heading-font-family;
-      color: $color-text-darkBrown;
-      text-align: right;
-      font-size: 20px;
-      font-weight: 500;
-      font-style: bold;
+      background-color: $color-background-black;
+      color: $color-text-white;
+      text-align: center;
+      font-size: 0.8 rem;
+      font-weight: 400;
       background-image: transparent;
+      padding: 10px;
     }
          
     &__myimage {
-      max-width: 100%;
+      max-width: 50%;
       height: auto;
       border-color: $color-background-main;
-      border-style: solid; 
-      border-width: 6px;
+      border-style: solid ; 
       text-align:center;
-      margin-top: 7px;
-      margin-bottom: 20px;
+      padding: 5px;
+      margin: 10px;
+      background-color: transparent
       }
     
     &__blurb {

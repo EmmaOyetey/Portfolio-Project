@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 /*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
 
-$background-dark-aqua: #219f75;
+$background-dark-aqua: rgb(33, 159, 117);
 $background-image-med:"./images/backgroundImageMed";
 
 /*--------------------------------------------------------------*/
@@ -13,13 +13,17 @@ $paragraph-font-family: inter, sans-serif;
 
 $color-text-darkBrown:rgb(14, 2, 2);
 $color-text-white:rgb(253, 245, 245);
-$color-border-darkBrown:rgb(24, 8, 8);
-$color-background-darkBrown: rgb(24, 8, 8);
-$color-background-main: #ffffff;
-
 $color-text-main: #000000;
 
+$color-border-darkBrown:rgb(24, 8, 8);
+
+$color-background-darkBrown: rgb(24, 8, 8);
+$color-background-main: #ffffff;
 $color-background-black: #000000;
+
+$color-hover-blue: rgb(33, 159, 117);
+
+/*alternative blue rgb(0, 157, 255) */
 
 /*
 <i class="fa-brands fa-linkedin-in"></i>;

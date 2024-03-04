@@ -14,25 +14,18 @@
   padding-bottom: 10px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
   height: auto;
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-  linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
   
-
     &__heading {
         font-family: $heading-font-family;
         font-size: larger;
         padding-top: 10px;
         padding-bottom: 10px;
         padding-left:10px;
-        background-color: $color-background-main;
+        background-color: $color-background-black;
         margin-bottom: 7px;
-        opacity: 70%;
-        color: $color-text-darkBrown;
+        opacity: 80%;
+        color: $color-text-white;
     }
-
     &__projectN{ 
         display: flex;
         flex-direction: column;

@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 /*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
 /*--------------------------------------------------------------*/
+/*alternative blue rgb(0, 157, 255) */
 /*
 <i class="fa-brands fa-linkedin-in"></i>;
 <i class="fa-brands fa-github"></i>
@@ -23,12 +24,15 @@ $color-button-hover:rgb(7, 1, 26);
 */
 * {
   margin: 0;
-  margin-right: 3px;
-  margin-left: 3px;
-  padding: 5px;
+  padding: 0;
   box-sizing: border-box;
   color: #000000;
   font-family: inter, sans-serif;
+}
+
+html {
+  margin: 3px;
+  padding: 10px;
 }
 
 a {
@@ -60,21 +64,17 @@ body {
 }
 
 .navigation {
-  height: 40px;
-  font-size: 36px;
+  height: 0.5 rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
 }
 .navigation__my-name {
-  font-size: 22px;
-  font-weight: 800;
+  font-size: 1rem;
+  font-weight: 700;
   font-family: cormorant, sans-serif;
-  padding: 0;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .navigation__desktop-links {
   display: none;
@@ -83,7 +83,7 @@ body {
 /*desk-top version modified to include nav links*/
 @media screen and (min-width: 768px) {
   .navigation {
-    height: 30px;
+    height: 0.5 rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -95,10 +95,17 @@ body {
     max-height: auto;
   }
   .navigation__desktop-links {
-    display: block;
+    display: flex;
     text-align: center;
+    justify-content: center;
     font-family: inter, sans-serif;
-    font-size: 20px;
+    font-size: 1rem;
+  }
+  .navigation__desktop-links--navItem {
+    padding-left: 20px;
+  }
+  .navigation__desktop-links--navItem:hover {
+    color: rgb(33, 159, 117);
   }
 }
 .intro {
@@ -343,10 +350,6 @@ body {
   padding-bottom: 10px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
   height: auto;
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
 }
 .myPortfolio__heading {
   font-family: cormorant, sans-serif;
@@ -354,10 +357,10 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 10px;
-  background-color: #ffffff;
+  background-color: #000000;
   margin-bottom: 7px;
-  opacity: 70%;
-  color: rgb(14, 2, 2);
+  opacity: 80%;
+  color: rgb(253, 245, 245);
 }
 .myPortfolio__projectN {
   display: flex;
