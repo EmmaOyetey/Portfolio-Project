@@ -16,16 +16,16 @@
   height: auto;
   
     &__heading {
-        font-family: $heading-font-family;
-        font-size: larger;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        padding-left:10px;
-        background-color: $color-background-black;
-        margin-bottom: 7px;
-        opacity: 80%;
-        color: $color-text-white;
-    }
+
+            font-family: $heading-font-family;
+            background-color: $color-background-black;
+            color: $color-text-white;
+            text-align: center;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 10px;     
+        }
+
     &__projectN{ 
         display: flex;
         flex-direction: column;

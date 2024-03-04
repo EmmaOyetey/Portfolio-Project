@@ -40,6 +40,11 @@ a {
   cursor: pointer;
 }
 
+/*this casing a bug think it has an inherited pseudo element -before. I added so that on click it could show blurb 2 but have more work to do to get this wotking! */
+.about-me__blurb--circleDown {
+  padding: 10px;
+}
+
 /*
 
 body {
@@ -50,19 +55,6 @@ body {
   }
 
   */
-.intro {
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-  /* Ensure the background image covers the entire viewport */
-  background-size: cover;
-  background-position: center;
-  /* Overlay with a linear gradient */
-  background-blend-mode: overlay;
-}
-
-.intro {
-  background-color: transparent;
-}
-
 .navigation {
   height: 0.5 rem;
   display: flex;
@@ -113,6 +105,14 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
+  /**here i am inserting mage again to get smaller version - may affect loading?*/
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+  /* ^Overlay with a linear gradient */
+  /* Ensure the background image covers the entire viewport */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: transparent; /*only need this if we set a background color) */
   /*
       border-style: solid; 
       border-color: $color-border-darkBrown; 
@@ -121,20 +121,18 @@ body {
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
-  font-size: 35px;
-  font-weight: 200;
-  color: rgb(14, 2, 2);
-  /*text-shadow: -1px -1px 0 #3b2f2f,  
-   1px -1px 0 #1e0a0a,
-  -1px  1px 0 #3b2f2f,
-   1px  1px 0 #320b0b;*/
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000000;
+  padding: 10px 10px 0px; /* padding for top, right, and left, but not bottom */
 }
 .intro__blurb {
   font-family: inter, sans-serif;
   text-align: right;
-  font-weight: 500;
+  font-weight: 400;
   color: rgb(14, 2, 2);
-  font-size: 18;
+  font-size: 0.8rem;
+  padding: 0 10px 10px; /* padding for left, right, and bottom, but not top */
 }
 
 @media screen and (min-width: 768px) {
@@ -170,58 +168,54 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+  /* ^Overlay with a linear gradient */
+  /* Ensure the background image covers the entire viewport */
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
-  padding-bottom: 20px;
-  /*{
-    font-family: $paragraph-font-family;
-    margin-bottom: 30px;
-    background-color: $color-background-main;
-    color: $color-text-darkBrown;
-    margin: 5px;
-    margin-top: 0;
-  }
-  */
+  /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 }
 .about-me__heading {
   font-family: cormorant, sans-serif;
-  color: rgb(14, 2, 2);
-  text-align: right;
-  font-size: 20px;
-  font-weight: 500;
-  font-style: bold;
-  background-image: transparent;
+  background-color: #000000;
+  color: rgb(253, 245, 245);
+  text-align: center;
+  font-size: 0.8 rem;
+  font-weight: 400;
+  padding: 10px;
 }
 .about-me__myimage {
-  max-width: 100%;
+  max-width: 60%;
   height: auto;
-  border-color: #ffffff;
-  border-style: solid;
-  border-width: 6px;
-  text-align: center;
-  margin-top: 7px;
-  margin-bottom: 20px;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 .about-me__blurb {
   display: flex;
   justify-content: space-between;
-}
-.about-me__blurb--1 {
+  background-color: white;
+  text-align: left;
+  margin: 10px;
   font-family: inter, sans-serif;
-  margin-top: 25px;
-  background-color: transparent;
+  font-weight: 400;
   color: rgb(14, 2, 2);
-  margin: 5px;
-  margin-bottom: 0;
-  /*background-color: $color-background-main;
-  opacity: 70%;*/
+  font-size: 0.8rem;
 }
 .about-me__blurb--2 {
   display: none;
 }
 
+/*{
+  font-family: $paragraph-font-family;
+  margin-bottom: 30px;
+  background-color: $color-background-main;
+  color: $color-text-darkBrown;
+  margin: 5px;
+  margin-top: 0;
+}
+*/
 /*desk top version using grid-template-area*/
 @media screen and (min-width: 768px) {
   .about-me {
@@ -353,14 +347,12 @@ body {
 }
 .myPortfolio__heading {
   font-family: cormorant, sans-serif;
-  font-size: larger;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
   background-color: #000000;
-  margin-bottom: 7px;
-  opacity: 80%;
   color: rgb(253, 245, 245);
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 10px;
 }
 .myPortfolio__projectN {
   display: flex;

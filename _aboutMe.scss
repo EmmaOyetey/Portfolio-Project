@@ -8,13 +8,14 @@
   justify-content: flex-start;
   text-align: left;
   background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    /* ^Overlay with a linear gradient */
-    /* Ensure the background image covers the entire viewport */
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    background-color: transparent; /*only need this if we set a background color) */
+        linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+        /* ^Overlay with a linear gradient */
+        /* Ensure the background image covers the entire viewport */
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+    
+    
   
   /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 
@@ -25,42 +26,34 @@
       text-align: center;
       font-size: 0.8 rem;
       font-weight: 400;
-      background-image: transparent;
       padding: 10px;
-    }
+      }
          
     &__myimage {
-      max-width: 50%;
+      max-width: 60%;
       height: auto;
-      border-color: $color-background-main;
-      border-style: solid ; 
-      text-align:center;
-      padding: 5px;
-      margin: 10px;
-      background-color: transparent
+      align-items: center;
+      margin-left: 10px;
+      margin-top: 10px;
       }
     
     &__blurb {
       display: flex;
       justify-content: space-between;
-      }
-
-    &__blurb--1 {
+      background-color: white;
+      text-align:left;
+      margin: 10px;
       font-family: $paragraph-font-family;
-      margin-top: 25px;
-      background-color: transparent;
+      font-weight: 400;
       color: $color-text-darkBrown;
-      margin: 5px;
-      margin-bottom: 0;
-      /*background-color: $color-background-main;
-      opacity: 70%;*/
-    }
+      font-size: 0.8rem;
+      }      
 
     &__blurb--2 {
       display: none;
     }
 
-
+  }
     
     /*{
       font-family: $paragraph-font-family;
@@ -71,7 +64,6 @@
       margin-top: 0;
     }
     */
-}
 
 /*desk top version using grid-template-area*/
 

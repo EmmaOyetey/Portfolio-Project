@@ -12,9 +12,15 @@ html { margin: 3px;
     padding: 10px;
 }
 
+
+
 a {
     text-decoration: none;
     cursor: pointer;
+}
+/*this casing a bug think it has an inherited pseudo element -before. I added so that on click it could show blurb 2 but have more work to do to get this wotking! */
+.about-me__blurb--circleDown {
+    padding: 10px;
 }
 
 /*
@@ -30,18 +36,3 @@ body {
   
 
 
-  .intro {
-
-    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-
-    /* Ensure the background image covers the entire viewport */
-    background-size: cover;
-    background-position: center;
-    /* Overlay with a linear gradient */
-    background-blend-mode: overlay;
-}
-  
-.intro {
-    background-color: transparent;
-}
