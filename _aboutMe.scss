@@ -22,12 +22,6 @@
       font-weight: 500;
       font-style: bold;
       background-image: transparent;
- /*   text-shadow: 
-      -1px -1px 0 #3b2f2f,
-       1px -1px 0 #1e0a0a,
-      -1px  1px 0 #3b2f2f,
-       1px  1px 0 #320b0b,
-      0px 0px 5px #fff; *//* White text shadow with a blur radius of 5px */ /* White text shadow with a blur radius of 5px */
     }
          
     &__myimage {
@@ -40,8 +34,13 @@
       margin-top: 7px;
       margin-bottom: 20px;
       }
+    
+    &__blurb {
+      display: flex;
+      justify-content: space-between;
+      }
 
-    &__blurb1 {
+    &__blurb--1 {
       font-family: $paragraph-font-family;
       margin-top: 25px;
       background-color: transparent;
@@ -52,9 +51,11 @@
       opacity: 70%;*/
     }
 
-    &__blurb2 {
+    &__blurb--2 {
       display: none;
     }
+
+
     
     /*{
       font-family: $paragraph-font-family;
@@ -101,14 +102,14 @@
           background-color: black;
       }    
 
-    &__blurb1  {
+    &__blurb--1  {
         grid-area: blurb1;
         text-align: left;
         margin: 0;
         font-size: 15px;
       }  
 
-    &__blurb2  {
+    &__blurb--2  {
         grid-area: blurb2;
         display: flex;
         margin: 0;
