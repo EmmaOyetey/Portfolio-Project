@@ -36,35 +36,17 @@
     .my-skills__logos {
         display: flex;
         justify-content: center;
-        background-color: aqua;
+        background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+        linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+        /* ^Overlay with a linear gradient */
+        /* Ensure the background image covers the entire viewport */
+        background-size: cover;
+        background-position: center;
+        background-blend-mode: overlay;
+        background-color: transparent;
         max-height: 70px;
         
     }
 }
 
-/* alternative code using template area
 
-    .my-skills {
-    display: grid;
-    align-content: stretch;
-    grid-gap: 10px;
-    grid-template-columns: repeat(6,1fr) ;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-areas:
-                "heading info info info info info"
-                "logos logos logos logos logos logos";
-      
-        &__heading {
-        grid-area: heading;
-        }
-  
-        &__info {
-        grid-area: info;
-        }
-  
-        &__logos {
-        grid-area: logos;
-        }         
-
-    }
-*/

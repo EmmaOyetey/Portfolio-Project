@@ -2,6 +2,16 @@
 
 /*mobile version*/
 
+.heading__aboutE {
+  font-family: $heading-font-family;
+  background-color: $color-background-black;
+  color: $color-text-white;
+  text-align: center;
+  font-size: 0.8 rem;
+  font-weight: 400;
+  padding: 10px;
+  }
+
 .about-me {
   display: flex;
   flex-direction: column;
@@ -19,15 +29,7 @@
   
   /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 
-    &__heading {
-      font-family: $heading-font-family;
-      background-color: $color-background-black;
-      color: $color-text-white;
-      text-align: center;
-      font-size: 0.8 rem;
-      font-weight: 400;
-      padding: 10px;
-      }
+
          
     &__myimage {
       max-width: 60%;
@@ -68,6 +70,13 @@
 /*desk top version using grid-template-area*/
 
 @media screen and (min-width: 768px) { 
+
+ .heading__aboutMe {
+    grid-area: heading;
+    margin-bottom: 0;
+    margin: 0;
+    text-align: left;
+  }  
   
   .about-me {
     background-image: url("./images/backgroundImageLrg-brick.jpg"), 
@@ -84,12 +93,7 @@
                   "blurb1 myimage"
                   "blurb2 myimage";
 
-    &__heading {
-        grid-area: heading;
-        margin-bottom: 0;
-        margin: 0;
-        text-align: left;
-      } 
+
 
     &__myimage {
         grid-area: myimage;

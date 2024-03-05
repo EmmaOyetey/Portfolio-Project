@@ -2,44 +2,39 @@
 
 /*mobile version*/
 
+.heading__myPortfolio {
+
+font-family: $heading-font-family;
+background-color: $color-background-black;
+color: $color-text-white;
+text-align: center;
+font-weight: 400;
+font-size: 18px;
+padding: 10px;       
+}
+
 .myPortfolio {
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   overflow-x: hidden;  /*remove?*/
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  padding-bottom: 10px;
-  max-width: 100%; /* Ensure the image doesn't exceed its container */ /* Ensure the image doesn't exceed its container */
-  height: auto;
+  border: 5px black; 
+  border: 5px solid brown; 
   
-    &__heading {
-
-            font-family: $heading-font-family;
-            background-color: $color-background-black;
-            color: $color-text-white;
-            text-align: center;
-            font-weight: 400;
-            font-size: 18px;
-            padding: 10px;     
-        }
-
-    &__projectN{ 
+    &__project{ 
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        text-align: left;
-        background-color: $color-background-main;
         padding: 5px;
         color:$color-text-darkBrown ;
         
         &--longlist {
             display: none;
         }
-
-        &--imageN {
+    }
+        
+    &__project-image {
         background-position: center;
         background-color: black;
         padding-bottom: 20px;
@@ -47,10 +42,9 @@
         height: auto;
         max-height: 200px;
         object-fit: cover;
-        
         }
 
-        &--layoutContainer {
+    &__project-layoutContainer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
@@ -58,118 +52,85 @@
             padding: 0;
         }
        
-        &--titleN {
-        font-size: 10px;
+    &__project-title {
+        font-size: small;
         padding-top: 10px;
         padding-left: 0px;
         text-align:left;
         }
 
-        &--linksN {
+    &__project-links {
             display: flex;
             flex-direction: row;
             justify-content:flex-end;
             padding-right: 0;
-            max-height: 10px;
-            margin-top: 0;
+            padding-top:5px;
+            padding-left:25px;
+            max-height: 20px;    
         }
-
-       &--skillsN {
-            display: none;
-        } 
-    }
 }
 
 /*desk top version using grid-template-area */
 
 @media screen and (min-width: 768px) { 
 
-    .myPortfolio  {
+ /*heading {
+        grid-area: heading;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: $heading-font-family;
+        font-size: medium;
+        padding-top: 10px;
+        padding-left:10px;  */
+
+
+.myPortfolio {
+
         display: grid;
         grid-gap: 10px;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 4fr 4fr;
+        grid-template-rows: 1fr 1fr;
         grid-template-areas:
-            "heading heading heading"
             "featured1 featured2 featured3"
             "longlist4 longlist5 longlist6";
 
-    
-        &__heading {
-                grid-area: heading;
-                font-family: $heading-font-family;
-                font-size: medium;
-                padding-top: 10px;
-                padding-left:10px;
-        }
-
-        &__projectN{ 
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                text-align: left;
-
-                &--1 &--featured {
-                    grid-area: featured1;
+        &--1 &--featured {
+                    grid-area: fetured1;
                 }
-
-                &--2 &--featured {
-                    grid-area:featured2;
+        &--2 &--featured {
+                    grid-area:pfeatured2;
                 }
-
-                &--3 &--featured  {
+        &--3 &--featured  {
                     grid-area:featured3;
                 }
-
-                &--4 &--longlist {
-                    grid-area: longlist3;
+        &--4 &--longlist{
+                    grid-area: longlist4;
                 }    
-
-                &--5 &--longlist {
-                    grid-area: longlist4 ;
+        &--5 &--longlist {
+                    grid-area: longlist5 ;
                 }
-
-                &--6 & --longlist {
+        &--6 &--longlist {
                     grid-area:longlist6
-                }
-
-                &--imageN {
-                max-width:100%;
-                height: auto;
-                max-height: 240px;
-                background-color: black;
-                padding-bottom: 20px;
-                }
+                }   
+        
+        &__project {
+            display:flex;
+        }
             
-                &--layoutContainer {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    align-items: flex-start;
-                    padding: 0;
-                }
-                
-                &--titleN {
-                font-size: 14px;
-                padding-left: 0px;
-                }
-            
-                &--linksN {
-                    display: flex;
-                    flex-direction: row;
-                    justify-content:flex-end;
-                    padding-right: 0;
-                }
-            
-                &--skillsN {
+        &__project-skills {
                     display: flex;
                     flex-direction: row;
                     justify-content:flex-start;
                     padding-right: 0;
                 } 
-            }
-     }
+
+
+                &a {
+                    padding: 10px
+                }
+    }   
+
+
 }
-
-
 
