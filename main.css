@@ -105,7 +105,7 @@ body {
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  /**here i am inserting mage again to get smaller version - may affect loading?*/
+  /**here i am inserting image again to get smaller version - may affect loading?*/
   background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
   /* ^Overlay with a linear gradient */
   /* Ensure the background image covers the entire viewport */
@@ -113,11 +113,6 @@ body {
   background-position: center;
   background-blend-mode: overlay;
   background-color: transparent; /*only need this if we set a background color) */
-  /*
-      border-style: solid; 
-      border-color: $color-border-darkBrown; 
-      border-width: 2px;
-  */
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
@@ -183,7 +178,7 @@ body {
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
-  margin-bottom: 23px;
+  margin-bottom: 10px;
   /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 }
 .about-me__myimage {
@@ -239,9 +234,6 @@ body {
     grid-template-rows: 1fr;
     grid-template-areas: "blurb1 myimage" "blurb2 myimage";
   }
-  .about-me__blurb.circleDown {
-    display: none;
-  }
   .about-me__myimage {
     grid-area: myimage;
     max-width: 100%;
@@ -291,6 +283,9 @@ body {
   .my-skills__heading {
     grid-column: col/span 1;
     grid-row: row 1;
+    padding-left: 10px;
+    font-family: cormorant, sans-serif;
+    font-size: 16px;
   }
   .my-skills__info {
     grid-column: col 2/span 5;
@@ -323,7 +318,9 @@ body {
   text-align: center;
   font-weight: 400;
   font-size: 18px;
-  padding: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .myPortfolio {
@@ -334,17 +331,21 @@ body {
   background-position: center;
   background-blend-mode: overlay;
   background-color: transparent; /*only need this if we set a background color) */
+  overflow-x: hidden; /*remove?*/
+  padding: 7px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
-  overflow-x: hidden; /*remove?*/
 }
 .myPortfolio__project {
   display: flex;
   flex-direction: column;
   padding: 5px;
   color: rgb(14, 2, 2);
+  background-color: #ffffff;
 }
 .myPortfolio__project--longlist {
   display: none;
@@ -364,10 +365,10 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 0;
+  padding: 0px;
 }
 .myPortfolio__project-title {
-  font-size: small;
+  font-size: 10px;
   padding-top: 10px;
   padding-left: 0px;
   text-align: left;
@@ -378,24 +379,29 @@ body {
   justify-content: flex-end;
   padding-right: 0;
   padding-top: 5px;
-  padding-left: 25px;
-  max-height: 20px;
+  padding-left: 5px;
+  max-height: 10px;
+}
+.myPortfolio__project-skills {
+  display: none;
 }
 
 /*desk top version using grid-template-area */
 @media screen and (min-width: 768px) {
-  /*heading {
-         grid-area: heading;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         font-family: $heading-font-family;
-         font-size: medium;
-         padding-top: 10px;
-         padding-left:10px;  */
+  .heading__myPortfolio {
+    font-family: cormorant, sans-serif;
+    background-color: #000000;
+    color: rgb(253, 245, 245);
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    padding: 10px;
+    margin-top: 10px;
+  }
   .myPortfolio {
+    padding: 20px;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 20px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "featured1 featured2 featured3" "longlist4 longlist5 longlist6";
@@ -426,9 +432,10 @@ body {
     flex-direction: row;
     justify-content: flex-start;
     padding-right: 0;
+    font-size: 14px;
   }
-  .myPortfolioa {
-    padding: 10px;
+  .myPortfolio__project-title {
+    font-size: 14px;
   }
 }
 /*
@@ -476,9 +483,6 @@ body {
   height: 50px;
   display: flex;
   justify-content: space-between;
-}
-.external-links__buttoni {
-  font-size: 24px;
 }
 
 /* Style the button 

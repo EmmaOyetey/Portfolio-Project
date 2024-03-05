@@ -5,7 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
-    /**here i am inserting mage again to get smaller version - may affect loading?*/
+    /**here i am inserting image again to get smaller version - may affect loading?*/
     background-image: url("./images/backgroundImageLrg-brick.jpg"), 
     linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
     /* ^Overlay with a linear gradient */
@@ -15,12 +15,6 @@
     background-blend-mode: overlay;
     background-color: transparent; /*only need this if we set a background color) */
     
-    
-    /*
-    border-style: solid; 
-    border-color: $color-border-darkBrown; 
-    border-width: 2px;
-*/
 
     &__job-title {
         font-family: $heading-font-family;

@@ -24,8 +24,7 @@
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
-  margin-bottom: 23px;
-
+  margin-bottom: 10px;
   /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
     
     &__myimage {
@@ -93,10 +92,6 @@
                 "blurb1 myimage"
                 "blurb2 myimage";
 
-      &__blurb.circleDown {
-        display: none;
-      }
-
       &__myimage {
           grid-area: myimage;
             max-width:100%;
@@ -111,27 +106,27 @@
         
       &__blurb {
 
-          text-align: left;
-          font-size:  1.2 rem;
-          padding-left: 10px;
-          margin: 0;      
+            text-align: left;
+            font-size:  1.2 rem;
+            padding-left: 10px;
+            margin: 0;      
 
-      &--1  {
-          grid-area: blurb1;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: left;
-        }  
+        &--1  {
+            grid-area: blurb1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+          }  
 
-      &--2  {
-          grid-area: blurb2;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: left;
-          padding-right: 15px;
-      }
+        &--2  {
+            grid-area: blurb2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            padding-right: 15px;
+        }
 
     }
   }
