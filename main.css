@@ -163,35 +163,41 @@ body {
   }
 }
 /*mobile version*/
-.heading__aboutE {
+.heading__aboutMe {
+  /*styling*/
   font-family: cormorant, sans-serif;
-  background-color: #000000;
-  color: rgb(253, 245, 245);
+  background-color: #ffffff;
+  color: rgb(14, 2, 2);
   text-align: center;
-  font-size: 0.8 rem;
+  font-size: 16px;
   font-weight: 400;
-  padding: 10px;
+  padding: 5px;
 }
 
 .about-me {
   display: flex;
-  flex-direction: column;
   justify-content: flex-start;
+  /*styling*/
   text-align: left;
   background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-  /* ^Overlay with a linear gradient */
-  /* Ensure the background image covers the entire viewport */
   background-size: cover;
   background-position: center;
   background-blend-mode: overlay;
+  margin-bottom: 23px;
   /*if time take mobiles heading styles into seperate section? this is being applied multiple times */
 }
 .about-me__myimage {
-  max-width: 60%;
+  max-width: 30%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border: 1px solid black;
   align-items: center;
   margin-left: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .about-me__blurb {
   display: flex;
@@ -208,71 +214,66 @@ body {
   display: none;
 }
 
-/*{
-  font-family: $paragraph-font-family;
-  margin-bottom: 30px;
-  background-color: $color-background-main;
-  color: $color-text-darkBrown;
-  margin: 5px;
-  margin-top: 0;
-}
-*/
 /*desk top version using grid-template-area*/
 @media screen and (min-width: 768px) {
   .heading__aboutMe {
     grid-area: heading;
+    color: rgb(14, 2, 2);
+    font-weight: 700;
+    text-align: left;
     margin-bottom: 0;
     margin: 0;
-    text-align: left;
+    padding: 10px;
   }
   .about-me {
+    /*background image inherited from mobile but adding here makes it darker. prob not good for loading speed.remove?*/
     background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to top left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
     background-size: cover;
     background-position: center;
     background-blend-mode: overlay;
+    padding: 15px;
+    max-height: 170px;
+    margin-bottom: 10px;
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 20px;
-    grid-template-areas: "heading myimage" "blurb1 myimage" "blurb2 myimage";
+    grid-template-rows: 1fr;
+    grid-template-areas: "blurb1 myimage" "blurb2 myimage";
+  }
+  .about-me__blurb.circleDown {
+    display: none;
   }
   .about-me__myimage {
     grid-area: myimage;
     max-width: 100%;
     height: auto;
-    max-height: 200px;
-    background-color: black;
+    max-height: 170px;
+    padding-bottom: 30px;
+    border: none;
+    margin: 0;
+    margin-left: 50px;
+  }
+  .about-me__blurb {
+    text-align: left;
+    font-size: 1.2 rem;
+    padding-left: 10px;
+    margin: 0;
   }
   .about-me__blurb--1 {
     grid-area: blurb1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: left;
-    margin: 0;
-    font-size: 15px;
   }
   .about-me__blurb--2 {
     grid-area: blurb2;
     display: flex;
-    margin: 0;
-    font-size: 15px;
-    font-family: inter, sans-serif;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding-right: 15px;
   }
 }
-/*
-  .about-me__blurb1 .aboutme__blurb2 {
-    background-color: #444;
-    font-size: 150%;
-  }
-
-  .about-me__heading {
-    color: $color-test-blue-background;
-    font-size: 200%; //*CHANGE */
-/*
-  &__blurb{
-      font-size:16px;
-      font-weight:400;
-      color: $color-text-headings;
-      font-family: Inter, sans-serif;
-  } */
 /*mobile version*/
 .my-skills {
   display: none;
@@ -326,13 +327,18 @@ body {
 }
 
 .myPortfolio {
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+  /* ^Overlay with a linear gradient */
+  /* Ensure the background image covers the entire viewport */
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  background-color: transparent; /*only need this if we set a background color) */
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
   overflow-x: hidden; /*remove?*/
-  border: 5px black;
-  border: 5px solid brown;
 }
 .myPortfolio__project {
   display: flex;
@@ -471,8 +477,11 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.external-links__buttoni {
+  font-size: 24px;
+}
 
-/* Style the button */
+/* Style the button 
 .btn {
   background-color: #007bff;
   color: white;
@@ -480,13 +489,9 @@ body {
   border: none;
   border-radius: 5px;
   font-size: 18px; /* Change font size here */
-}
-
-/* Adjust the size of the icon */
+/* Adjust the size of the icon 
 .btn i {
   font-size: 24px; /* Change icon size here */
-}
-
 /*
      &__a {
         display: flex;

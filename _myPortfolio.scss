@@ -10,18 +10,23 @@ color: $color-text-white;
 text-align: center;
 font-weight: 400;
 font-size: 18px;
-padding: 10px;       
+padding: 10px;     
 }
 
 .myPortfolio {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  overflow-x: hidden;  /*remove?*/
-  border: 5px black; 
-  border: 5px solid brown; 
+    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+    /* ^Overlay with a linear gradient */
+    /* Ensure the background image covers the entire viewport */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+    background-color: transparent; /*only need this if we set a background color) */ 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+    overflow-x: hidden;  /*remove?*/
   
     &__project{ 
         display: flex;
