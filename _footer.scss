@@ -29,14 +29,48 @@
 }
 
    */
+   .external-links {
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      height: 60px;
+      background-color: $color-background-black;
+      padding: 10px;
 
-   .social-media-links {
+      &__button {  
+         display: flex;
+         border-radius: 50%;
+         padding: 10px;
+         background-color:blue;
+         height: 50px;
+         display: flex;
+         justify-content: space-between;
 
-    background-color: black;
-    height: 50px;
-    display: flex;
-    justify-content: space-between;
+         &i {
+            font-size: 24px;
+         }
+      }
 
+      
+   }
+
+    /* Style the button 
+    .btn {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 18px; /* Change font size here */
+    */
+    
+    /* Adjust the size of the icon 
+    .btn i {
+      font-size: 24px; /* Change icon size here */
+    
+
+/*
      &__a {
         display: flex;
         padding: 20px;
@@ -45,4 +79,4 @@
         background-color: white;
         border-radius: 50%; 
      }
-   }
+   } */
