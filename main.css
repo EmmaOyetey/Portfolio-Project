@@ -40,21 +40,12 @@ a {
   cursor: pointer;
 }
 
-/*this casing a bug think it has an inherited pseudo element -before. I added so that on click it could show blurb 2 but have more work to do to get this wotking! */
-.about-me__blurb--circleDown {
-  padding: 10px;
-}
-
-/*
-
-body {
-    font-size: 1.5em;
-    color: #fe7f88;
-    background-image: none;
-    background-color: transparent;
+@media screen and (min-width: 1024px) {
+  html {
+    margin: 10px;
+    padding: 50px;
   }
-
-  */
+}
 .navigation {
   height: 0.5 rem;
   display: flex;
@@ -443,7 +434,6 @@ body {
   justify-content: space-around;
   align-content: center;
   text-align: center;
-  height: px;
   background-color: #000000;
   padding: 10px;
 }
@@ -453,15 +443,24 @@ body {
   border-radius: 50%;
   margin-left: 10px;
 }
+.external-links__linkedin:hover {
+  background-color: rgb(33, 159, 117);
+}
 .external-links__github {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
 }
+.external-links__github:hover {
+  background-color: rgb(33, 159, 117);
+}
 .external-links__cv {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
+}
+.external-links__cv:hover {
+  color: rgb(33, 159, 117);
 }
 
 /*mobile version*/
@@ -495,8 +494,9 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
-.get-in-touch:hover {
-  background-color: rgb(33, 159, 117);
+.get-in-touch__button:hover {
+  color: rgb(33, 159, 117);
+  font-weight: 800;
 }
 
 /*

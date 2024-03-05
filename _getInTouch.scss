@@ -31,12 +31,12 @@
       padding: 5px;
       padding-left: 20px;
       padding-right: 20px;
-
-    }
+   
         &:hover {
-        background-color: $color-hover-blue;
+        color: $color-hover-blue;
+        font-weight: 800;
         }
-
+      }
 }
 
 

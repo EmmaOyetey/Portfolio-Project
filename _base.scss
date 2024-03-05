@@ -12,27 +12,16 @@ html { margin: 3px;
     padding: 10px;
 }
 
-
-
 a {
     text-decoration: none;
     cursor: pointer;
 }
-/*this casing a bug think it has an inherited pseudo element -before. I added so that on click it could show blurb 2 but have more work to do to get this wotking! */
-.about-me__blurb--circleDown {
-    padding: 10px;
-}
-
-/*
-
-body {
-    font-size: 1.5em;
-    color: #fe7f88;
-    background-image: none;
-    background-color: transparent;
-  }
-
-  */
-  
 
 
+
+@media screen and (min-width: 1024px) { 
+    html { margin: 10px;
+        padding: 50px;
+    }
+
+    }
