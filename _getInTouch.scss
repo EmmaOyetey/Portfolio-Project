@@ -8,36 +8,38 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 
     &__heading {
       display: flex;
       font-family: $heading-font-family;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
       margin-top: 10px;
-      font-size: xx-large;
+      font-size: 25px;
     }
 /*move button to base and add modifier --contact*/
     &__button {  
       display: flex;
       padding: 10px 20px;
-      font-size: 16px;
-      font-weight: bold;
+      font-size: 12px;
+      font-weight: 400;
       text-transform: uppercase;
       color: $color-text-main;
       background-color: $color-background-main;
       border: 2px single black;
       border-radius: 5px; 
-      padding: 10px;
+      padding: 5px;
       padding-left: 20px;
       padding-right: 20px;
 
     }
         &:hover {
-        background-color: #0056b3;
+        background-color: $color-hover-blue;
         }
 
 }
+
+
 /*
 Focus effect 
     .button:focus {

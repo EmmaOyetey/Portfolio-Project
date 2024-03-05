@@ -438,51 +438,43 @@ body {
     font-size: 14px;
   }
 }
-/*
-.social-media-links {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    height: 60px;
-    background-color: $color-background-black;
-    padding: 10px;
-
-*/
-/*
-    & __icon {
-    display: flex;
-    padding: 20px;
-    align-items: center;    
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%; /* Create a circle shape */
-/* width: 400px; */ /* Adjust width as needed */
-/*height: 400px;*/ /* Adjust height as needed */
-/* Add border */
-/* } 
-
-&.a {    background-color: yellow;
-            padding: 0; }
-}
-
-   */
 .external-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-content: center;
   text-align: center;
-  height: 60px;
+  height: px;
   background-color: #000000;
   padding: 10px;
+  /*
+        &__button {  
+           display: flex;
+           border-radius: 50%;
+           padding: 10px;
+           background-color:blue;
+           height: 20px;
+           display: flex;
+           justify-content: space-between;
+           font-family: $heading-font-family;
+        }
+  */
 }
-.external-links__button {
-  display: flex;
-  border-radius: 50%;
+.external-links__linkedin {
+  background-color: #ffffff;
   padding: 10px;
-  background-color: blue;
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.external-links__github {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+}
+.external-links__github__cv {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  color: #000000;
 }
 
 /* Style the button 
@@ -513,32 +505,32 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   /*move button to base and add modifier --contact*/
 }
 .get-in-touch__heading {
   display: flex;
   font-family: cormorant, sans-serif;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-top: 10px;
-  font-size: xx-large;
+  font-size: 25px;
 }
 .get-in-touch__button {
   display: flex;
   padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #000000;
   background-color: #ffffff;
   border: 2px single black;
   border-radius: 5px;
-  padding: 10px;
+  padding: 5px;
   padding-left: 20px;
   padding-right: 20px;
 }
 .get-in-touch:hover {
-  background-color: #0056b3;
+  background-color: rgb(33, 159, 117);
 }
 
 /*

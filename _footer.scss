@@ -1,55 +1,48 @@
 @use "./variables" as *;
-/*
-.social-media-links {
-    display: flex;
-    justify-content: space-between;
-    align-content: center;
-    text-align: center;
-    height: 60px;
-    background-color: $color-background-black;
-    padding: 10px;
-    
-*/
-/*
-    & __icon {
-    display: flex;
-    padding: 20px;
-    align-items: center;    
-    background-color: rgb(255, 255, 255);
-    border-radius: 50%; /* Create a circle shape */
-   /* width: 400px; *//* Adjust width as needed */
-    /*height: 400px;*/ /* Adjust height as needed */
-    
-     /* Add border */
-    
-   /* } 
 
-&.a {    background-color: yellow;
-            padding: 0; }
-}
 
-   */
    .external-links {
       display: flex;
-      justify-content: center;
+      justify-content: space-around;
       align-content: center;
       text-align: center;
-      height: 60px;
+      height: px;
       background-color: $color-background-black;
       padding: 10px;
 
+      &__linkedin {
+         background-color: #ffffff;
+         padding: 10px;
+         border-radius: 50%;
+         margin-left: 10px;
+      }
+
+      &__github {
+         background-color: #ffffff;
+         padding: 10px;
+         border-radius: 50%;
+      }
+
+      &__cv {
+         background-color: #ffffff;
+         padding: 10px;
+         border-radius: 50%;
+         
+      }
+
+}
+/*
       &__button {  
          display: flex;
          border-radius: 50%;
          padding: 10px;
          background-color:blue;
-         height: 50px;
+         height: 20px;
          display: flex;
          justify-content: space-between;
-
-
+         font-family: $heading-font-family;
       }
-
+*/
       
    }
 
