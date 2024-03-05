@@ -446,18 +446,6 @@ body {
   height: px;
   background-color: #000000;
   padding: 10px;
-  /*
-        &__button {  
-           display: flex;
-           border-radius: 50%;
-           padding: 10px;
-           background-color:blue;
-           height: 20px;
-           display: flex;
-           justify-content: space-between;
-           font-family: $heading-font-family;
-        }
-  */
 }
 .external-links__linkedin {
   background-color: #ffffff;
@@ -470,34 +458,12 @@ body {
   padding: 10px;
   border-radius: 50%;
 }
-.external-links__github__cv {
+.external-links__cv {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
-  color: #000000;
 }
 
-/* Style the button 
-.btn {
-  background-color: #007bff;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px; /* Change font size here */
-/* Adjust the size of the icon 
-.btn i {
-  font-size: 24px; /* Change icon size here */
-/*
-     &__a {
-        display: flex;
-        padding: 20px;
-        justify-content: center;
-        align-items: center;
-        background-color: white;
-        border-radius: 50%; 
-     }
-   } */
 /*mobile version*/
 .get-in-touch {
   display: flex;
