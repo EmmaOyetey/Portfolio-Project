@@ -36,6 +36,7 @@
       margin-left: 10px;
       margin-top: 10px;
       margin-bottom: 10px;
+      border-radius: 5px;
       }
     
     &__blurb {
@@ -47,7 +48,8 @@
       font-family: $paragraph-font-family;
       font-weight: 400;
       color: $color-text-darkBrown;
-      font-size: 0.8rem;
+      font-size: 12px;
+      border-radius: 5px; 
       }   
 
     &__blurb--2 {
@@ -61,23 +63,24 @@
 @media screen and (min-width: 768px) { 
 
     .heading__aboutMe {
-      color: $color-text-darkBrown;
+      background-color: transparent;
+      color: $color-text-white;
       font-weight: 700;
       text-align: left;
+      font-size: 24px ;
       margin-bottom: 0;
       margin: 0;
       padding: 10px;
-      background-color: transparent;
+      padding-left: 50px;
+      padding-bottom: 10px;     
     }  
   
     .about-me { 
-
-
-        padding: 15px;
+        padding: 30px;
+        padding-top: 0px;
         max-height: 170px;
         margin-bottom: 10px;
-
-
+        
         display: grid;
         grid-template-columns: 3fr 1fr ;
         grid-template-rows: 1fr;
@@ -89,25 +92,33 @@
 
             grid-area: myimage;
 
-            max-width:100%;
-            height: auto;
-            max-height: 170px;
-
+            max-width: 100%;
+            height:auto;
+            max-height: 200px;
+            
+            border-radius: 10px; 
             display: flex;
             justify-content: flex-end;
             align-items: center;
-            padding-bottom: 30px;
             border: none;             /* note -border on desktop version */
             margin: 0;
-            margin-left: 50px;
+            margin-left: 100px;
+            object-fit: cover;
+
+
         }  
           
         &__blurb {
 
               text-align: left;
               font-size:  1.2 rem;
-              padding-left: 10px;
-              margin: 0;      
+              padding-left: 20px;
+              margin: 0;   
+              border-radius: 10px; 
+              font-size: 15px;
+              //example box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+              //The values 0 4px 8px rgba(0, 0, 0, 0.1) represent the horizontal offset (0), vertical offset (4px), blur radius (8px), and color (rgba(0, 0, 0, 0.1)) of the shadow. You can adjust these values to achieve the desired shadow effect.
+              //rgba(0, 0, 0, 0.1) specifies the shadow color as black with 0.1 opacity. Adjust the color and opacity as needed. -->
 
           &--1  {
               grid-area: blurb1;
@@ -115,6 +126,7 @@
               align-items: center;
               justify-content: center;
               text-align: left;
+              border-radius: 10%;
             }  
 
           &--2  {

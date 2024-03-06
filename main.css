@@ -143,6 +143,7 @@ a {
     font-size: 20px;
     font-weight: 400;
     font-family: inter, sans-serif;
+    padding-bottom: 0;
   }
 }
 /*mobile version*/
@@ -176,6 +177,7 @@ a {
   margin-left: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 5px;
 }
 .about-me__blurb {
   display: flex;
@@ -186,7 +188,8 @@ a {
   font-family: inter, sans-serif;
   font-weight: 400;
   color: rgb(14, 2, 2);
-  font-size: 0.8rem;
+  font-size: 12px;
+  border-radius: 5px;
 }
 .about-me__blurb--2 {
   display: none;
@@ -195,16 +198,20 @@ a {
 /*desk top version using grid-template-area*/
 @media screen and (min-width: 768px) {
   .heading__aboutMe {
-    color: rgb(14, 2, 2);
+    background-color: transparent;
+    color: rgb(253, 245, 245);
     font-weight: 700;
     text-align: left;
+    font-size: 24px;
     margin-bottom: 0;
     margin: 0;
     padding: 10px;
-    background-color: transparent;
+    padding-left: 50px;
+    padding-bottom: 10px;
   }
   .about-me {
-    padding: 15px;
+    padding: 30px;
+    padding-top: 0px;
     max-height: 170px;
     margin-bottom: 10px;
     display: grid;
@@ -216,20 +223,24 @@ a {
     grid-area: myimage;
     max-width: 100%;
     height: auto;
-    max-height: 170px;
+    max-height: 200px;
+    border-radius: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-bottom: 30px;
     border: none; /* note -border on desktop version */
     margin: 0;
-    margin-left: 50px;
+    margin-left: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .about-me__blurb {
     text-align: left;
     font-size: 1.2 rem;
-    padding-left: 10px;
+    padding-left: 20px;
     margin: 0;
+    border-radius: 10px;
+    font-size: 15px;
   }
   .about-me__blurb--1 {
     grid-area: blurb1;
@@ -237,6 +248,7 @@ a {
     align-items: center;
     justify-content: center;
     text-align: left;
+    border-radius: 10%;
   }
   .about-me__blurb--2 {
     grid-area: blurb2;
