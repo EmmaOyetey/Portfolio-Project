@@ -49,7 +49,7 @@ margin-bottom: 10px;
     &__project-image {
         background-position: center;
         
-        padding-bottom: 20px;
+        padding-bottom: 7px;
         max-width: 100%; /* Ensure the image doesn't exceed its container */
         height: auto;
         max-height: 140px;
@@ -73,15 +73,32 @@ margin-bottom: 10px;
         
         }
 
-    &__project-links {
+    &__project-link {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             justify-content:flex-end;
-            padding-right: 0;
             padding-top:5px;
-            padding-left:5px;
-            max-height: 10px;    
+            padding-right:10px;
+            
+            &--eye {
+                padding-left: 10px;
+
+                &:hover {
+                background-color: $color-hover-blue;
+                }
+            }
+
+            &--code{ 
+                padding: 0;
+
+                &:hover {
+                background-color: $color-hover-blue;
+                }
+            }
         }
+          
+            
+ 
 
     &__project-skills {
         display: none;

@@ -369,7 +369,7 @@ a {
 }
 .myPortfolio__project-image {
   background-position: center;
-  padding-bottom: 20px;
+  padding-bottom: 7px;
   max-width: 100%; /* Ensure the image doesn't exceed its container */
   height: auto;
   max-height: 140px;
@@ -389,14 +389,24 @@ a {
   padding-left: 0px;
   text-align: left;
 }
-.myPortfolio__project-links {
+.myPortfolio__project-link {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: flex-end;
-  padding-right: 0;
   padding-top: 5px;
-  padding-left: 5px;
-  max-height: 10px;
+  padding-right: 10px;
+}
+.myPortfolio__project-link--eye {
+  padding-left: 10px;
+}
+.myPortfolio__project-link--eye:hover {
+  background-color: rgb(33, 159, 117);
+}
+.myPortfolio__project-link--code {
+  padding: 0;
+}
+.myPortfolio__project-link--code:hover {
+  background-color: rgb(33, 159, 117);
 }
 .myPortfolio__project-skills {
   display: none;
@@ -485,7 +495,8 @@ a {
   border-radius: 50%;
 }
 .external-links__cv:hover {
-  color: rgb(33, 159, 117);
+  background-color: rgb(33, 159, 117);
+  color: rgb(253, 245, 245);
 }
 
 /*mobile version*/
@@ -520,7 +531,8 @@ a {
   padding-right: 20px;
 }
 .get-in-touch__button:hover {
-  color: rgb(33, 159, 117);
+  background-color: rgb(33, 159, 117);
+  color: rgb(253, 245, 245);
   font-weight: 800;
 }
 

@@ -10,7 +10,7 @@
       padding: 10px;
 
       &__linkedin {
-         background-color: #ffffff;
+         background-color: $color-background-main;
          padding: 10px;
          border-radius: 50%;
          margin-left: 10px;
@@ -21,21 +21,23 @@
       }
 
       &__github {
-         background-color: #ffffff;
+         background-color:$color-background-main ;
          padding: 10px;
          border-radius: 50%;
+
          &:hover {
          background-color: $color-hover-blue;
             }
          }
 
       &__cv {
-         background-color: #ffffff;
+         background-color: $color-background-main;
          padding: 10px;
          border-radius: 50%;
          
          &:hover {
-            color: $color-hover-blue;
+            background-color: $color-hover-blue;
+            color: $color-text-white;
          
       }
 

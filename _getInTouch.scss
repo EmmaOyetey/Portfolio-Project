@@ -33,7 +33,8 @@
       padding-right: 20px;
    
         &:hover {
-        color: $color-hover-blue;
+        background-color: $color-hover-blue;
+        color: $color-text-white;
         font-weight: 800;
         }
       }
