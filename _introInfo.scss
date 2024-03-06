@@ -21,7 +21,8 @@
         font-size: 2rem;
         font-weight: 500;
         color: $color-text-main;
-        padding: 10px 10px 0px; /* padding for top, right, and left, but not bottom */
+        padding: 10px;/* padding for top, right, and left, but not bottom */
+        
     }
     
     &__blurb{
@@ -42,27 +43,22 @@
 .intro {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: centre;
         text-align: center;
         
 
      &__job-title {
         align-content: center;
-        font-size: 40px;
+        font-size: 80px;
         font-weight: 400;
         font-family: cormorant, sans-serif;
-        padding: 10px;
-        &__job-title {
-            font-family: $color-text-black;
-            font-size: 25px;
-            font-weight: 800;
-            color: $color-text-white;
-            text-shadow: -1px -1px 0 #3b2f2f,  
-            1px -1px 0 #1e0a0a,
-           -1px  1px 0 #3b2f2f,
-            1px  1px 0 #320b0b;
+        
+        height: 25vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        
         }
-     }
         
      &__blurb{
             font-size:15px;
