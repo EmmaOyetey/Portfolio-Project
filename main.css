@@ -48,14 +48,14 @@ a {
   }
 }
 .navigation {
-  height: 0.5 rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 10px;
 }
 .navigation__my-name {
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 700;
   font-family: cormorant, sans-serif;
   color: #000000;
@@ -68,7 +68,7 @@ a {
 /*desk-top version modified to include nav links*/
 @media screen and (min-width: 768px) {
   .navigation {
-    height: 0.5 rem;
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,21 +76,20 @@ a {
   }
   .navigation__my-name {
     font-family: cormorant, sans-serif;
-    max-width: 200px; /*CHANGE -testing*/
-    max-height: auto;
+    font-size: 1.5em;
   }
   .navigation__desktop-links {
     display: flex;
     text-align: center;
     justify-content: center;
     font-family: inter, sans-serif;
-    font-size: 1rem;
+    font-size: 24px;
+  }
+  .navigation__desktop-links:hover {
+    color: rgb(33, 159, 117);
   }
   .navigation__desktop-links--navItem {
-    padding-left: 20px;
-  }
-  .navigation__desktop-links--navItem:hover {
-    color: rgb(33, 159, 117);
+    padding-left: 25px;
   }
 }
 .intro {
@@ -127,7 +126,7 @@ a {
   .intro {
     display: flex;
     flex-direction: column;
-    justify-content: centre;
+    justify-content: center;
     text-align: center;
   }
   .intro__job-title {
@@ -297,8 +296,8 @@ a {
   .my-skills {
     display: grid;
     grid-gap: 10px;
-    grid-template-columns: repeat(6, [col] 1fr);
-    grid-template-rows: repeat(3, [row] auto);
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
     font-size: small;
   }
   .my-skills__heading {
@@ -365,7 +364,6 @@ a {
   display: flex;
   flex-direction: column;
   padding: 5px;
-  color: rgb(14, 2, 2);
   background-color: #ffffff;
 }
 .myPortfolio__project--longlist {
@@ -480,7 +478,6 @@ a {
   background-color: #ffffff;
   padding: 10px;
   border-radius: 50%;
-  margin-left: 10px;
 }
 .external-links__linkedin:hover {
   background-color: rgb(33, 159, 117);
@@ -511,7 +508,6 @@ a {
   align-items: center;
   text-align: center;
   padding-bottom: 20px;
-  /*move button to base and add modifier --contact*/
 }
 .get-in-touch__heading {
   display: flex;

@@ -12,8 +12,8 @@
     .my-skills{
         display: grid;
         grid-gap: 10px;
-        grid-template-columns: repeat(6, [col] 1fr ) ;
-        grid-template-rows: repeat(3, [row] auto  );
+        grid-template-columns: repeat(6, 1fr ) ;
+        grid-template-rows: repeat(3, auto  );
         font-size: small;
         
         
