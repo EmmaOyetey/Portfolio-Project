@@ -4,6 +4,7 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Inter:wght@100..900&display=swap')*/
 /*--------------------------------------------------------------*/
 /*alternative blue rgb(0, 157, 255) */
+/*$background-dark-aqua: rgb(33, 159, 117); */
 /*
 <i class="fa-brands fa-linkedin-in"></i>;
 <i class="fa-brands fa-github"></i>
@@ -229,6 +230,9 @@ a {
     max-width: 100%;
     height: auto;
     max-height: 170px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding-bottom: 30px;
     border: none; /* note -border on desktop version */
     margin: 0;
@@ -534,17 +538,4 @@ a {
   background-color: rgb(33, 159, 117);
   color: rgb(253, 245, 245);
   font-weight: 800;
-}
-
-/*
-Focus effect 
-    .button:focus {
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
-}
-
-Active effect 
-.button:active {
-    transform: translateY(1px);
-}
-*//*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

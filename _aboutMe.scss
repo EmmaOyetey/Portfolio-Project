@@ -99,6 +99,10 @@
             max-width:100%;
             height: auto;
             max-height: 170px;
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
             padding-bottom: 30px;
             border: none;             /* note -border on desktop version */
             margin: 0;

@@ -25,6 +25,7 @@ margin-bottom: 10px;
     background-blend-mode: overlay;
     background-color: transparent; /*only need this if we set a background color) */ 
     overflow-x: hidden;  /*remove?*/
+
     padding: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -54,24 +55,22 @@ margin-bottom: 10px;
         height: auto;
         max-height: 140px;
         object-fit: cover;
-        }
+    }
 
     &__project-layoutContainer {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: flex-start;
-            padding: 0px;
-            
-        }
+            padding: 0px;  
+    }
        
     &__project-title {
         font-size: 10px;
         padding-top: 10px;
         padding-left: 0px;
         text-align:left;
-        
-        }
+    }
 
     &__project-link {
             display: flex;
@@ -95,7 +94,7 @@ margin-bottom: 10px;
                 background-color: $color-hover-blue;
                 }
             }
-        }
+     }
           
             
  
@@ -150,10 +149,8 @@ margin-bottom: 10px;
                     grid-area: longlist5 ;
                 }
         &--6 &--longlist {
-                    grid-area:longlist6
+                    grid-area:longlist6 ;
                 }   
-        
-        
 
         &__project {
             display:flex;
@@ -165,15 +162,11 @@ margin-bottom: 10px;
                     justify-content:flex-start;
                     padding-right: 0;
                     font-size: 14px;
-                } 
+        } 
+
         &__project-title {
             font-size: 14px;
         }
-
-
-
     }   
-
-
 }
 
