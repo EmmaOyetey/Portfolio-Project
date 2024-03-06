@@ -25,10 +25,9 @@ margin-bottom: 10px;
     background-blend-mode: overlay;
     background-color: transparent; /*only need this if we set a background color) */ 
     overflow-x: hidden;  /*remove?*/
-    padding: 7px;
+    padding: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    max-width: 100;
 
     display: flex;
     flex-direction: column;
@@ -49,11 +48,11 @@ margin-bottom: 10px;
         
     &__project-image {
         background-position: center;
-        background-color: black;
+        
         padding-bottom: 20px;
         max-width: 100%; /* Ensure the image doesn't exceed its container */
         height: auto;
-        max-height: 200px;
+        max-height: 140px;
         object-fit: cover;
         }
 
@@ -119,13 +118,13 @@ margin-bottom: 10px;
             "longlist4 longlist5 longlist6";
 
         &--1 &--featured {
-                    grid-area: fetured1;
+                    grid-area: featured1;
                 }
         &--2 &--featured {
-                    grid-area:pfeatured2;
+                    grid-area: featured2;
                 }
         &--3 &--featured  {
-                    grid-area:featured3;
+                    grid-area: featured3;
                 }
         &--4 &--longlist{
                     grid-area: longlist4;
