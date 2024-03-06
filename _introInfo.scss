@@ -6,14 +6,6 @@
     justify-content: flex-start;
     text-align: left;
     /**here i am inserting image again to get smaller version - may affect loading?*/
-    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    /* ^Overlay with a linear gradient */
-    /* Ensure the background image covers the entire viewport */
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    background-color: transparent; /*only need this if we set a background color) */
     
 
     &__job-title {
@@ -49,7 +41,7 @@
 
      &__job-title {
         align-content: center;
-        font-size: 80px;
+        font-size: 60px;
         font-weight: 400;
         font-family: cormorant, sans-serif;
         
@@ -61,7 +53,7 @@
         }
         
      &__blurb{
-            font-size:15px;
+            font-size:20px;
             font-weight:400;
             font-family: $paragraph-font-family;
             

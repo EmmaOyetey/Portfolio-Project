@@ -41,6 +41,13 @@ a {
   cursor: pointer;
 }
 
+#image-container {
+  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
 @media screen and (min-width: 1024px) {
   html {
     margin: 10px;
@@ -98,13 +105,6 @@ a {
   justify-content: flex-start;
   text-align: left;
   /**here i am inserting image again to get smaller version - may affect loading?*/
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-  /* ^Overlay with a linear gradient */
-  /* Ensure the background image covers the entire viewport */
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
-  background-color: transparent; /*only need this if we set a background color) */
 }
 .intro__job-title {
   font-family: cormorant, sans-serif;
@@ -131,7 +131,7 @@ a {
   }
   .intro__job-title {
     align-content: center;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 400;
     font-family: cormorant, sans-serif;
     height: 25vh;
@@ -140,7 +140,7 @@ a {
     align-items: flex-end;
   }
   .intro__blurb {
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 400;
     font-family: inter, sans-serif;
   }
@@ -161,10 +161,6 @@ a {
   justify-content: flex-start;
   text-align: left;
   margin-bottom: 10px;
-  background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-  background-size: cover;
-  background-position: center;
-  background-blend-mode: overlay;
   /*if time take mobiles heading styles /image styling into seperate section? 
   this is being applied multiple times */
 }
@@ -205,13 +201,9 @@ a {
     margin-bottom: 0;
     margin: 0;
     padding: 10px;
+    background-color: transparent;
   }
   .about-me {
-    /*background image inherited from mobile but adding here makes it darker. prob not good for loading speed.remove?*/
-    background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to top left, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
     padding: 15px;
     max-height: 170px;
     margin-bottom: 10px;

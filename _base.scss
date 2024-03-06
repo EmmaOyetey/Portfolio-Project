@@ -17,14 +17,18 @@ a {
     cursor: pointer;
 }
 
+#image-container {
+    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
+    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay;
+}
 
 @media screen and (min-width: 1024px) { 
 
     html { margin: 10px;
-    padding: 30px;
+           padding: 30px;
     }
 
-    .image-container {
-        
-    }
-}  
+    }  

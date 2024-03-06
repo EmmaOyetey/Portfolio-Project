@@ -11,6 +11,7 @@
     font-size: 16px;
     font-weight: 500;
     padding: 5px;
+    
   }
 
 .about-me {
@@ -20,11 +21,7 @@
     text-align: left;
     margin-bottom: 10px;
 
-    background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-    linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
+ 
     
     /*if time take mobiles heading styles /image styling into seperate section? 
     this is being applied multiple times */
@@ -70,16 +67,12 @@
       margin-bottom: 0;
       margin: 0;
       padding: 10px;
+      background-color: transparent;
     }  
   
     .about-me { 
 
-      /*background image inherited from mobile but adding here makes it darker. prob not good for loading speed.remove?*/
-        background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-        linear-gradient(to top left , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.6));
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: overlay;
+
         padding: 15px;
         max-height: 170px;
         margin-bottom: 10px;
