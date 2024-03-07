@@ -11,23 +11,27 @@
 
     .my-skills{
         display: grid;
-        grid-gap: 10px;
+        
         grid-template-columns: repeat(6, 1fr ) ;
         grid-template-rows: repeat(3, auto  );
-        font-size: small;
         
+        font-size:15px;
+        padding-top: 30px;
         
         &__heading { 
                 grid-column: col / span 1;
                 grid-row: row 1;
-                padding-left: 10px;
+                padding-left: 0;
                 font-family:$heading-font-family ;
-                font-size: 16px;
+                font-size: 24 px;
+                margin-left: 20px;
+                
         }
 
         &__info {
                 grid-column: col 2 / span 5 ;
                 grid-row: row 1;
+                padding-left: 20px;
         }
 
         &__logos {
@@ -42,14 +46,6 @@
     .my-skills__logos {
         display: flex;
         justify-content: center;
-        background-image: url("./images/backgroundImageLrg-brick.jpg"), 
-        linear-gradient(to bottom right , rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-        /* ^Overlay with a linear gradient */
-        /* Ensure the background image covers the entire viewport */
-        background-size: cover;
-        background-position: center;
-        background-blend-mode: overlay;
-        background-color: transparent;
         max-height: 70px;
         
     }

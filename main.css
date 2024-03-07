@@ -295,21 +295,23 @@ a {
 @media screen and (min-width: 768px) {
   .my-skills {
     display: grid;
-    grid-gap: 10px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, auto);
-    font-size: small;
+    font-size: 15px;
+    padding-top: 30px;
   }
   .my-skills__heading {
     grid-column: col/span 1;
     grid-row: row 1;
-    padding-left: 10px;
+    padding-left: 0;
     font-family: cormorant, sans-serif;
-    font-size: 16px;
+    font-size: 24 px;
+    margin-left: 20px;
   }
   .my-skills__info {
     grid-column: col 2/span 5;
     grid-row: row 1;
+    padding-left: 20px;
   }
   .my-skills__logos {
     grid-column: col/span 6;
@@ -320,13 +322,6 @@ a {
   .my-skills__logos {
     display: flex;
     justify-content: center;
-    background-image: url("./images/backgroundImageLrg-brick.jpg"), linear-gradient(to bottom right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.9));
-    /* ^Overlay with a linear gradient */
-    /* Ensure the background image covers the entire viewport */
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: overlay;
-    background-color: transparent;
     max-height: 70px;
   }
 }
@@ -365,6 +360,7 @@ a {
   flex-direction: column;
   padding: 5px;
   background-color: #ffffff;
+  margin-bottom: 10px;
 }
 .myPortfolio__project--longlist {
   display: none;
@@ -427,9 +423,11 @@ a {
     margin-top: 10px;
   }
   .myPortfolio {
-    padding: 20px;
+    height: -moz-max-content;
+    height: max-content;
+    padding: 40px;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 40px;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "featured1 featured2 featured3" "longlist4 longlist5 longlist6";
@@ -464,6 +462,12 @@ a {
   }
   .myPortfolio__project-title {
     font-size: 14px;
+  }
+  .myPortfolio__project-image {
+    background-position: center;
+    padding: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 .external-links {
