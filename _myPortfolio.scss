@@ -40,7 +40,7 @@ margin-bottom: 10px;
         flex-direction: column;
         padding: 5px;
         background-color:$color-background-main;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         &--longlist {
             display: none;
@@ -114,8 +114,6 @@ margin-bottom: 10px;
 .heading__myPortfolio {
 
         font-family: $heading-font-family;
-        background-color: $color-background-black;
-        color: $color-text-white;
         text-align: center;
         font-weight: 400;
         font-size: 18px;
@@ -126,6 +124,7 @@ margin-bottom: 10px;
 
 .myPortfolio {
         height: max-content;
+        background-image: none;
         padding: 40px;
         display: grid;
         grid-gap: 40px;
